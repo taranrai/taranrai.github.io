@@ -5,6 +5,30 @@ body {
   font-family: 'Product Sans', sans-serif;
 }
 
+.publications {
+        margin: 0 auto;
+        width: 80%;
+        text-align: left;
+    }
+.publication {
+        margin-bottom: 20px;
+    }
+
+.publication-title {
+        font-weight: bold;
+    }
+.publication-authors, .publication-date {
+        font-style: italic;
+    }
+.publication-link {
+        text-decoration: none;
+    }
+
+.publications ul {
+          list-style-type: none;
+          padding: 0;
+    }
+
 
 
 nav {

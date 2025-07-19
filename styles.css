@@ -240,31 +240,52 @@ h1 {
   margin: 2rem 0;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
 .social-icons a:hover {
   color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
+/* Social Icons Images */
 .social-icons img {
   width: 50px;
   height: 50px;
-  filter: brightness(0) saturate(100%);
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
-[data-theme="dark"] .social-icons img {
-  filter: brightness(0) saturate(100%) invert(1);
+/* Light mode: show light-mode images, hide dark-mode images */
+.social-icons img.light-mode {
+  display: inline-block;
 }
 
+.social-icons img.dark-mode {
+  display: none;
+}
+
+/* Dark mode: hide light-mode images, show dark-mode images */
+[data-theme="dark"] .social-icons img.light-mode {
+  display: none;
+}
+
+[data-theme="dark"] .social-icons img.dark-mode {
+  display: inline-block;
+}
+
+/* Hover effects for social icons */
 .social-icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
+  opacity: 0.8;
+  box-shadow: 0 4px 15px var(--shadow);
 }
 
 /* Newsletter Embed */
@@ -486,6 +507,10 @@ footer {
     width: 100%;
     height: 200px;
     align-self: center;
+  }
+
+  .social-icons {
+    gap: 0.5rem;
   }
 }
 

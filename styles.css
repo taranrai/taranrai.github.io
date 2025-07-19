@@ -26,6 +26,24 @@
   box-sizing: border-box;
 }
 
+/* Newsletter Embed */
+.newsletter-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.newsletter-container iframe {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+/* Dark mode: invert iframe colors and remove white background */
+[data-theme="dark"] .newsletter-container iframe {
+  filter: invert(1) hue-rotate(180deg);
+  background: transparent !important;
+}
+
 body {
   background: var(--bg-color);
   color: var(--text-color);

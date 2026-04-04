@@ -8,7 +8,7 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.taranrai.me/">
 <meta name="description" content="Taran Rai is an AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI. PhD in AI/ML. Publications in Nature, Cancers, Vet Sciences, SPIE, and more.">
-<meta name="keywords" content="Taran Rai, Taranpreet Rai, Taran Singh Rai, Taranpreet Singh Rai, Taran S Rai, Taranpreet S Rai, AI Engineer, ML Engineer, Machine Learning, Computer Vision, Deep Learning, LLMs, Large Language Models, Applied AI, Data Science, Digital Pathology, Computational Pathology, Generative AI, AI Researcher">
+<meta name="keywords" content="Taran Rai, Taranpreet Rai, AI Engineer, ML Engineer, Machine Learning, Computer Vision, Deep Learning, LLMs, Large Language Models, Applied AI, Data Science, Digital Pathology, Computational Pathology, Generative AI, AI Researcher">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -505,9 +505,12 @@
     .theme-toggle span:not(.theme-toggle__icon) { display: none; }
     .hero { padding: 6rem 0 4rem; min-height: auto; }
     .hero__top { flex-direction: column; gap: 2rem; align-items: center; text-align: center; }
-    .hero__portrait { width: 140px; height: 140px; }
-    .hero__tag { margin-left: auto; margin-right: auto; }
-    .hero__actions { justify-content: center; }
+    .hero__portrait { width: 140px; height: 140px; order: -1; }
+    .hero__text { display: flex; flex-direction: column; align-items: center; }
+    .hero__tag { order: 2; margin-bottom: 1rem; }
+    .hero__name { order: 1; margin-bottom: 0.5rem; }
+    .hero__subtitle { order: 3; }
+    .hero__actions { order: 4; justify-content: center; }
     .scroll-hint { display: none; }
     .passions-grid { grid-template-columns: 1fr; }
     .blog-grid { grid-template-columns: 1fr; }

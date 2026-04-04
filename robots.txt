@@ -1,0 +1,11 @@
+# robots.txt for taranrai.me
+
+User-agent: *
+Allow: /
+Disallow: /assets/images/home/
+
+# Sitemap
+Sitemap: https://www.taranrai.me/sitemap.xml
+
+# LLMs.txt
+# See https://www.taranrai.me/llms.txt for AI-readable site summary

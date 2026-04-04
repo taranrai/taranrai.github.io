@@ -1,0 +1,47 @@
+# Taran Rai
+
+> AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI.
+
+## About
+
+Taran Rai is an AI/ML Engineer and Researcher. His work spans computer vision, deep learning, large language models (LLMs), and applied AI/ML. He builds and validates algorithms for real-world deployment across multiple domains.
+
+His research background is in computational pathology and health AI (both animal and human), including work with pharmaceutical companies on social media listening, startups on wearable tech and sensor-based systems through the vHive Animal Health Incubator, and guest lecturing on AI and neural networks at the University of Surrey.
+
+He holds a PhD in AI/ML for digital pathology (University of Surrey), an MSc in Data Science (City, University of London), and a BA in Economics and Finance (Keele University).
+
+## Contact
+
+- Email: taranraiml@gmail.com
+- Website: https://www.taranrai.me
+- Blog: https://www.modeltakes.com
+- Twitter/X: https://www.twitter.com/taranraix/
+- LinkedIn: https://www.linkedin.com/in/taranrai/
+- Google Scholar: https://scholar.google.ca/citations?hl=en&user=-sK0WvQAAAAJ
+- GitHub: https://github.com/taranrai
+- Instagram: https://www.instagram.com/taranrai.me
+
+## Selected Publications
+
+- IPATH: A Large-Scale Pathology Image-Text Dataset from Instagram for Vision-Language Model Training. Journal of Imaging Informatics in Medicine, 2026. Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K.
+- Comparative Analysis of Generative and Diffusion Models for Mitosis Synthesis in Histopathology Images. Cureus Journal of Computer Science, 3(1), 2026. Alkhadra RB, Diaz-Santana P, Rai T, Wells K.
+- Echo chamber: uncovering the public views on ultrasounds via advanced social media listening. SPIE Medical Imaging, 2025. Rai T, Tarrant G, Wells K.
+- The IPATH dataset: training CLIP models with histopathology-based image-caption pairs from Instagram. SPIE Medical Imaging, 2025. Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K.
+- Evaluating diffusion model generated synthetic histopathology image data against authentic digital pathology images. SPIE Medical Imaging, 2024. Rai T, Gola C, Hernández M, et al.
+- Keeping Pathologists in the Loop and an Adaptive F1-Score Threshold Method for Mitosis Detection in Canine Perivascular Wall Tumours. Cancers, 16(3), 644, 2024. Rai T, Morisi A, Bacci B, et al.
+- The Terminator and veterinary medicine: can they meet outside the world of sci-fi? Vet Record, 2023. Rai T.
+- Deep Learning for Necrosis and Mitosis Detection in Canine Soft Tissue Sarcoma Whole Slide Images. PhD Thesis, University of Surrey, 2023. Rai T.
+- Digital Transformation of Cancer Care in the Era of Big Data, AI and Data-Driven Interventions. Seminars in Oncology Nursing, 2023. Papachristou N, et al.
+- Detection of Necrosis in Digitised Whole-Slide Images for Better Grading of Canine Soft-Tissue Sarcomas Using Machine-Learning. Veterinary Sciences, 10(1), 45, 2023. Morisi A, Rai T, et al.
+- Deep Learning for Necrosis Detection Using Canine Perivascular Wall Tumour Whole Slide Images. Scientific Reports, 12, 10634, 2022. Rai T, Morisi A, et al.
+
+## Projects
+
+- The LiverSWAT Project (https://liverswat.org): Liver health awareness and free FibroScan screening roadshows across the UK, created through NishkamSWAT charity.
+- Model Takes (https://www.modeltakes.com): Blog covering AI/ML and technology.
+
+## Optional links
+
+- [Publications](https://scholar.google.ca/citations?hl=en&user=-sK0WvQAAAAJ)
+- [Blog](https://www.modeltakes.com)
+- [LiverSWAT](https://liverswat.org)

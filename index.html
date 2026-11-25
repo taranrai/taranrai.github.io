@@ -307,16 +307,11 @@
   .strip--media { margin: 0.25rem 0 0.5rem; }
   .strip img.mark { max-height: 40px; }
   .strip .wm { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: var(--text-secondary); }
-  @media (hover: hover) {
-    .strip img { filter: grayscale(1) brightness(0); opacity: 0.6; transition: filter 0.25s, opacity 0.25s; }
-    [data-theme="dark"] .strip img { filter: grayscale(1) brightness(0) invert(1); opacity: 0.65; }
-    .strip a:hover img { filter: none; opacity: 1; }
-    [data-theme="dark"] .strip a:hover img { filter: none; background: var(--tile-bg); box-shadow: 0 0 0 6px var(--tile-bg); border-radius: 1px; }
-    .strip .wm { opacity: 0.75; }
-  }
-  @media (hover: none) {
-    [data-theme="dark"] .strip img { background: var(--tile-bg); box-shadow: 0 0 0 5px var(--tile-bg); border-radius: 1px; }
-  }
+  .strip img { filter: grayscale(1) brightness(0); opacity: 0.6; transition: filter 0.25s, opacity 0.25s; }
+  [data-theme="dark"] .strip img { filter: grayscale(1) brightness(0) invert(1); opacity: 0.65; }
+  .strip a:hover img, .strip a:active img { filter: none; opacity: 1; }
+  [data-theme="dark"] .strip a:hover img, [data-theme="dark"] .strip a:active img { filter: none; background: var(--tile-bg); box-shadow: 0 0 0 6px var(--tile-bg); border-radius: 1px; }
+  .strip .wm { opacity: 0.75; }
 
   /* Work & interests cards (founder style) */
   .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 0.5rem; }
@@ -492,9 +487,14 @@
     .topbar { padding: 0 16px; }
     .menu { padding-left: 16px; padding-right: 16px; }
     .hero { padding: 28px 0 56px; }
-    .hero__top { flex-direction: column-reverse; align-items: flex-start; gap: 1.5rem; }
-    .hero__portrait { width: 112px; height: 112px; }
-    .lede { margin-top: 1.4rem; }
+    .hero { text-align: center; }
+    .hero__top { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
+    .hero__portrait { width: 128px; height: 128px; }
+    .hero__tag { margin-left: auto; margin-right: auto; }
+    .lede { margin: 1.4rem auto 1.1rem; }
+    .hero .prose { margin-left: auto; margin-right: auto; }
+    .actions { justify-content: center; }
+    .logos-block > .sec-h, .logos-block > .fine { text-align: left; }
     .actions .btn { flex: 1 1 auto; justify-content: center; }
     .section { padding: 3.5rem 0; }
     .logos-block { padding-bottom: 3.5rem; }
@@ -507,7 +507,8 @@
     .tile__logo img { max-height: 28px; }
     .tile__logo img.wide { max-height: 30px; }
     .now__list li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
-    .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 6px; }
+    .strip { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 6px; column-gap: 0; }
+    .strip li { flex: 0 0 33.333%; }
     .strip a, .strip span.lg { height: 56px; }
     .strip img { max-width: 84px; max-height: 24px; }
     .cards { grid-template-columns: minmax(0, 1fr); }
@@ -580,10 +581,9 @@
         </div>
         <div class="hero__portrait"><img src="assets/images/home/lecture.jpg" alt="Taran Rai" width="168" height="168" fetchpriority="high"></div>
       </div>
-      <p class="lede">I'm an AI/ML engineer and researcher with experience across computer vision, deep learning and large language models, particularly in animal and human health.</p>
+      <p class="lede">I'm an AI/ML engineer and researcher. Most of my work has been in computer vision, deep learning and large language models, applied to animal and human health.</p>
       <div class="prose">
-        <p class="body">Through the University of Surrey and its <a href="https://vhive.buzz/animal-health-incubator/" target="_blank" rel="noopener">vHive Animal Health Incubator</a>, I've worked on projects with Zoetis, Mars Petcare and early-stage startups.</p>
-        <p class="body">My current interests include applied AI research, AI safety, model evaluation and open-source AI. I'm also the founder of <a href="https://www.liverswat.org/" target="_blank" rel="noopener">LiverSWAT</a> and a trustee of <a href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener">Alcohol Change UK</a>.</p>
+        <p class="body">Through the University of Surrey I've worked on projects with Zoetis, Mars Petcare and early-stage startups in its <a href="https://vhive.buzz/animal-health-incubator/" target="_blank" rel="noopener">vHive Animal Health Incubator</a>, and independently with AIBVS. I also founded <a href="https://www.liverswat.org/" target="_blank" rel="noopener">LiverSWAT</a>.</p>
       </div>
       <div class="actions">
         <a href="#research" class="btn btn--primary">View research</a>
@@ -608,7 +608,7 @@
         <button class="card" type="button" role="tab" id="t3" aria-selected="false" aria-controls="p3" tabindex="-1"><span class="card__n">03</span><span class="card__body"><span class="card__t">Open-Source AI</span><span class="card__d">Who gets to build.</span></span></button>
         <button class="card" type="button" role="tab" id="t4" aria-selected="false" aria-controls="p4" tabindex="-1"><span class="card__n">04</span><span class="card__body"><span class="card__t">LiverSWAT</span><span class="card__d">Liver health, closer to home.</span></span></button>
       </div>
-      <div class="panel prose" id="p1" role="tabpanel" aria-labelledby="t1"><p>Projects through the University of Surrey and vHive, from first scoping to a working model:</p>
+      <div class="panel prose" id="p1" role="tabpanel" aria-labelledby="t1"><p>My part was usually scoping, prototyping, evaluation and handover. Projects with industry partners and vHive startups included:</p>
             <ul>
               <li>Computer vision for animal detection and behaviour from CCTV</li>
               <li>Acoustic disease detection in poultry</li>
@@ -618,15 +618,14 @@
               <li>Computational pathology</li>
             </ul>
 </div>
-      <div class="panel prose" id="p2" role="tabpanel" aria-labelledby="t2" hidden><p>When should a model decide, and when should a person? In pathology that meant <a href="https://doi.org/10.3390/cancers16030644" target="_blank" rel="noopener">keeping pathologists in the loop</a> with adaptive thresholds. It has since meant uncertainty, evaluation, checking LLM outputs and <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12933/129331A/Evaluating-diffusion-model-generated-synthetic-histopathology-image-data-against-authentic/10.1117/12.3006285.short" target="_blank" rel="noopener">testing synthetic medical images</a> against real ones.</p>
-            <p>I now work on research initiatives in AI safety, reliability and evaluation, and spoke on the risks and opportunities at BVA Live's <em>Beyond ChatGPT</em> panel in 2023.</p>
+      <div class="panel prose" id="p2" role="tabpanel" aria-labelledby="t2" hidden><p>When should a model decide, and when should a person? In pathology that meant <a href="https://doi.org/10.3390/cancers16030644" target="_blank" rel="noopener">keeping pathologists in the loop</a> with adaptive thresholds. Since then it has meant uncertainty, checking LLM outputs and <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12933/129331A/Evaluating-diffusion-model-generated-synthetic-histopathology-image-data-against-authentic/10.1117/12.3006285.short" target="_blank" rel="noopener">testing synthetic medical images</a> against real ones. I spoke on the risks and opportunities at BVA Live's <em>Beyond ChatGPT</em> panel in 2023.</p>
 </div>
-      <div class="panel prose" id="p3" role="tabpanel" aria-labelledby="t3" hidden><p>One of my first papers asked whether openly available ImageNet features could work on small histopathology datasets. Open models are now far more capable, and I think they matter well beyond research.</p>
-            <p>For many industries and enterprises, models you can run on your own infrastructure keep sensitive data in-house, can be tested on your own terms and avoid lock-in to a single provider. Open weights aren't the same as full transparency, though: training data and methods are often undisclosed, so open-source, open-weight and proprietary models each need weighing on their own terms.</p>
-            <p>Open models also underpin community work I'm involved in, such as the open-source liver health benchmark for AI evaluation we're developing through LiverSWAT.</p>
+      <div class="panel prose" id="p3" role="tabpanel" aria-labelledby="t3" hidden><p>One of my first papers asked whether openly available ImageNet features could work on small histopathology datasets. Open models are far more capable now.</p>
+            <p>Models you can run on your own infrastructure keep sensitive data in-house, reduce dependence on a single vendor and put capable tools within reach of smaller organisations and researchers. Most are open-weight rather than open-source: the weights are released, but the training data and code usually aren't.</p>
+            <p>It's also why the LiverSWAT benchmark is being built in the open.</p>
 </div>
-      <div class="panel prose" id="p4" role="tabpanel" aria-labelledby="t4" hidden><p>I founded LiverSWAT after losing my father to liver cancer in 2024. It's a national healthcare campaign under NishkamSWAT for liver disease awareness and prevention, bringing free NHS-delivered FibroScans to underserved communities through events in places of worship and community centres.</p>
-            <p>We're building an open-source liver health benchmark for AI evaluation with ML researchers, and received an ElevenLabs Impact Program grant to make liver health information available in Panjabi, Hindi and Urdu through AI voice and translation.</p>
+      <div class="panel prose" id="p4" role="tabpanel" aria-labelledby="t4" hidden><p>I founded LiverSWAT after losing my father to liver cancer in 2024. It's a national campaign under NishkamSWAT for liver disease awareness and prevention, bringing free NHS-delivered FibroScans to underserved communities through events in places of worship and community centres.</p>
+            <p>With ML researchers, we're building an open-source liver health benchmark for AI evaluation. LiverSWAT has also been awarded a grant through the ElevenLabs Impact Program, which we plan to use for AI voice and translation in Panjabi, Hindi and Urdu.</p>
             <div class="badges">
               <a href="https://www.liverswat.org/" target="_blank" rel="noopener" aria-label="LiverSWAT"><img class="liver" src="assets/images/logos/liverswat.png" alt="LiverSWAT" loading="lazy"></a>
               <a href="https://nishkamswat.org" target="_blank" rel="noopener" aria-label="NishkamSWAT"><img src="assets/images/logos/nishkamswat.jpg" alt="NishkamSWAT" loading="lazy"></a>
@@ -636,11 +635,9 @@
           </div>
       <h3 class="subhead">Visiting Researcher</h3>
       <div class="vr">
-        <p class="vr__lead"><b>Centre for Vision, Speech and Signal Processing (CVSSP), University of Surrey.</b> Applied AI/ML research across human and animal health, including:</p>
+        <p class="vr__lead"><b>Centre for Vision, Speech and Signal Processing (CVSSP), University of Surrey.</b> Ongoing research collaborations include:</p>
         <ul class="now__list">
           <li><b>Aviasenze</b><span>AI research for acoustic monitoring of poultry health.</span></li>
-          <li><b>AI safety</b><span>Research on AI safety, reliability and evaluation.</span></li>
-          <li><b>LiverSWAT</b><span>Developing an open-source liver health benchmark for AI evaluation.</span></li>
           <li><b>Marwell Wildlife</b><span>Research support for the ongoing Marwell Zoo project.</span></li>
         </ul>
       </div>
@@ -650,8 +647,9 @@
       <div class="section__label"><span class="n">02</span> About</div>
       <h2 class="section__heading">Background</h2>
       <div class="prose">
-        <p>My PhD at the University of Surrey used deep learning and computer vision to detect necrosis and mitosis in canine soft-tissue sarcoma biopsies, key steps in grading these tumours. I then worked as a data scientist and AI/ML engineer in Surrey's Centre for Vision, Speech and Signal Processing (CVSSP) on computer vision, audio classification and LLM applications such as RAG, topic modelling and social media listening, through industry partners and vHive startups.</p>
-        <p>I've guest lectured on neural networks for Surrey's <a href="https://catalogue.surrey.ac.uk/2023-4/module/EEEM005" target="_blank" rel="noopener">AI and AI Programming</a> module, and I'm a <a href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener">trustee of Alcohol Change UK</a>, the national charity working to reduce alcohol-related harm, especially for vulnerable people.</p>
+        <p>I started in economics at Keele University, then moved into data science at City, University of London. My PhD at the University of Surrey used deep learning and computer vision to detect necrosis and mitosis in canine soft-tissue sarcoma biopsies, key steps in grading these tumours.</p>
+        <p>I then worked at Surrey's CVSSP as a data scientist and AI/ML engineer on industry and startup projects, and <a href="https://catalogue.surrey.ac.uk/2023-4/module/EEEM005" target="_blank" rel="noopener">guest lectured on neural networks</a>. I've since left that role and remain at CVSSP as a Visiting Researcher.</p>
+        <p>Outside research, I'm a <a href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener">trustee of Alcohol Change UK</a>, the national charity working to reduce alcohol-related harm, especially for vulnerable people.</p>
       </div>
       <div class="edu">
         <div><b>PhD</b>AI/ML in digital pathology, University of Surrey (CVSSP)</div>
@@ -664,7 +662,7 @@
 
     <section class="section" id="words" aria-labelledby="words-h">
       <div class="sec-h"><h2 class="section__label" id="words-h">From collaborators</h2><span class="sec-h__count li-tag"><svg class="li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>LinkedIn recommendations</span></div>
-      <div class="quotes"><figure class="quote"><blockquote><p>“Taran spearheaded a sophisticated data science initiative for three of the world&#x27;s leading institutions in animal health, Mars Science &amp; Diagnostics, Zoetis, and University of Surrey. Taran played a pivotal role in enhancing our research approach through valuable insights and contributed to a deeper comprehension of how our digital health technology improves real-world outcomes.”</p></blockquote><figcaption><b>Scott Lyle</b><span>Digital Health Innovation &amp; Strategies</span></figcaption></figure><figure class="quote"><blockquote><p>“We have enjoyed fruitful collaborations through vHive and the University of Surrey, mainly in the application of AI and ML on large datasets related to animal health. These included investigation of the role of social media listening in providing insights into perceptions of animal owners, image analysis, predictive analytics in livestock health and integration of diverse data sources.”</p></blockquote><figcaption><b>Alasdair Cook</b><span>Veterinary Epidemiologist &amp; Emeritus Professor, University of Surrey</span></figcaption></figure><figure class="quote"><blockquote><p>“What distinguishes Taran is not only technical fluency, but also editorial judgment and scientific stewardship.”</p></blockquote><blockquote><p>“This kind of leadership matters: it requires the ability to evaluate evidence critically, coordinate across stakeholders, and communicate with precision—skills Taran demonstrates consistently.”</p></blockquote><figcaption><b>Andrea Wright</b><span>Director, Global Clinical Studies and Outcomes Research</span></figcaption></figure><figure class="quote"><blockquote><p>“Taran and I collaborated since 2015 on a project on AI and tumor histopathology, specifically soft tissue sarcomas in dogs. He is dedicated, hard-working, and highly skilled and we wouldn&#x27;t have had such good results without him.”</p></blockquote><figcaption><b>Barbara Bacci</b><span>Associate Professor of Veterinary Pathology, Università di Bologna</span></figcaption></figure></div>
+      <div class="quotes"><figure class="quote"><blockquote><p>“Taran spearheaded a sophisticated data science initiative for three of the world&#x27;s leading institutions in animal health, Mars Science &amp; Diagnostics, Zoetis, and University of Surrey. Taran played a pivotal role in enhancing our research approach through valuable insights and contributed to a deeper comprehension of how our digital health technology improves real-world outcomes.”</p></blockquote><figcaption><b>Scott Lyle</b><span>Digital Health Innovation &amp; Strategies</span></figcaption></figure><figure class="quote"><blockquote><p>“We have enjoyed fruitful collaborations through vHive and the University of Surrey, mainly in the application of AI and ML on large datasets related to animal health. These included investigation of the role of social media listening in providing insights into perceptions of animal owners, image analysis, predictive analytics in livestock health and integration of diverse data sources.”</p></blockquote><figcaption><b>Alasdair Cook</b><span>Veterinary Epidemiologist &amp; Emeritus Professor, University of Surrey</span></figcaption></figure><figure class="quote"><blockquote><p>“What distinguishes Taran is not only technical fluency, but also editorial judgment and scientific stewardship.”</p></blockquote><blockquote><p>“This kind of leadership matters: it requires the ability to evaluate evidence critically, coordinate across stakeholders, and communicate with precision—skills Taran demonstrates consistently.”</p></blockquote><figcaption><b>Andrea Wright</b><span>Director, Global Clinical Studies and Outcomes Research</span></figcaption></figure><figure class="quote"><blockquote><p>“Taran and I collaborated since [2018] on a project on AI and tumor histopathology, specifically soft tissue sarcomas in dogs. He is dedicated, hard-working, and highly skilled and we wouldn&#x27;t have had such good results without him.”</p></blockquote><figcaption><b>Barbara Bacci</b><span>Associate Professor of Veterinary Pathology, Università di Bologna</span></figcaption></figure></div>
       <p class="fine"><a class="ext" href="https://www.linkedin.com/in/taranrai/details/recommendations/" target="_blank" rel="noopener"><svg class="li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>Read full recommendations on LinkedIn ↗</a></p>
     </section>
     <section class="section" id="research">

@@ -405,12 +405,15 @@
   .outlets img { height: 15px; width: auto; display: block; }
   [data-theme="dark"] .outlets img { filter: invert(1); }
 
-  /* Quotes (only rendered once real recommendations exist) */
-  .quotes { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
-  .quote { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1.25rem; }
-  .quote blockquote { font-size: 1.1rem; color: var(--text-primary); line-height: 1.55; }
-  .quote figcaption { font-size: 0.82rem; margin-top: 0.6rem; color: var(--text-tertiary); }
-  .quote figcaption b { color: var(--text-secondary); }
+  /* Quotes from collaborators */
+  .quotes { display: grid; gap: 2rem; margin-top: 0.75rem; }
+  .quote { border-left: 2px solid var(--border-strong); padding-left: 1.25rem; max-width: 64ch; }
+  .quote blockquote p { font-size: 1.02rem; line-height: 1.6; color: var(--text-primary); }
+  .quote blockquote + blockquote { margin-top: 0.6rem; }
+  .quote figcaption { margin-top: 0.75rem; font-size: 0.82rem; line-height: 1.45; display: flex; flex-direction: column; }
+  .quote figcaption b { color: var(--text-primary); font-weight: 600; }
+  .quote figcaption span { color: var(--text-tertiary); }
+  #words .fine { margin-top: 1.75rem; }
 
   .subscribe { margin-top: 2rem; overflow: visible; }
   .subscribe__label { display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 0.6rem; }
@@ -652,6 +655,11 @@
       <ul class="logos logos--3"><li><a class="tile" href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener"><span class="tile__logo"><img class="tall" src="assets/images/logos/alcoholchange.svg" alt="Alcohol Change UK" loading="lazy"></span><span class="tile__text"><span class="tile__name">Alcohol Change UK</span><span class="tile__cap">Trustee</span></span></a></li><li><a class="tile" href="https://www.liverswat.org/" target="_blank" rel="noopener"><span class="tile__logo"><img class="liver" src="assets/images/logos/liverswat.png" alt="LiverSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">LiverSWAT</span><span class="tile__cap">Founder · national liver health campaign</span></span></a></li><li><a class="tile" href="https://nishkamswat.org" target="_blank" rel="noopener"><span class="tile__logo"><img class="photo" src="assets/images/logos/nishkamswat.jpg" alt="NishkamSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">NishkamSWAT</span><span class="tile__cap">LiverSWAT is a NishkamSWAT initiative</span></span></a></li></ul>
     </section>
 
+    <section class="section" id="words" aria-labelledby="words-h">
+      <h2 class="section__label" id="words-h">From collaborators</h2>
+      <div class="quotes"><figure class="quote"><blockquote><p>“Taran spearheaded a sophisticated data science initiative for three of the world&#x27;s leading institutions in animal health, Mars Science &amp; Diagnostics, Zoetis, and University of Surrey. Taran played a pivotal role in enhancing our research approach through valuable insights and contributed to a deeper comprehension of how our digital health technology improves real-world outcomes.”</p></blockquote><figcaption><b>Scott Lyle</b><span>Digital Health Innovation &amp; Strategies</span></figcaption></figure><figure class="quote"><blockquote><p>“We have enjoyed fruitful collaborations through vHive and the University of Surrey, mainly in the application of AI and ML on large datasets related to animal health. These included investigation of the role of social media listening in providing insights into perceptions of animal owners, image analysis, predictive analytics in livestock health and integration of diverse data sources.”</p></blockquote><figcaption><b>Alasdair Cook</b><span>Veterinary Epidemiologist &amp; Emeritus Professor, University of Surrey</span></figcaption></figure><figure class="quote"><blockquote><p>“What distinguishes Taran is not only technical fluency, but also editorial judgment and scientific stewardship.”</p></blockquote><blockquote><p>“This kind of leadership matters: it requires the ability to evaluate evidence critically, coordinate across stakeholders, and communicate with precision—skills Taran demonstrates consistently.”</p></blockquote><figcaption><b>Andrea Wright</b><span>Director, Global Clinical Studies and Outcomes Research</span></figcaption></figure><figure class="quote"><blockquote><p>“Taran and I collaborated since 2015 on a project on AI and tumor histopathology, specifically soft tissue sarcomas in dogs. He is dedicated, hard-working, and highly skilled and we wouldn&#x27;t have had such good results without him.”</p></blockquote><figcaption><b>Barbara Bacci</b><span>Associate Professor of Veterinary Pathology, Università di Bologna</span></figcaption></figure></div>
+      <p class="fine"><a class="ext" href="https://www.linkedin.com/in/taranrai/details/recommendations/" target="_blank" rel="noopener">Read full recommendations on LinkedIn ↗</a></p>
+    </section>
     <section class="section" id="research">
       <div class="section__label"><span class="n">03</span> Research</div>
       <h2 class="section__heading">Selected publications</h2>

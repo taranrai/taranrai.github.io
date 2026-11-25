@@ -1,14 +1,18 @@
 # Taran Rai
 
-> AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI.
+> AI/ML engineer and researcher working on computer vision, deep learning, LLMs and applied AI, mostly in animal and human health. Founder of LiverSWAT.
 
 ## About
 
-Taran Rai is an AI/ML Engineer and Researcher. His work spans computer vision, deep learning, large language models (LLMs), and applied AI/ML. He builds and validates algorithms for real-world deployment across multiple domains.
+Taran Rai is an AI/ML engineer and researcher. His work spans computer vision, deep learning, large language models (LLMs) and applied AI/ML, much of it in animal and human health (One Health).
 
-His research background is in computational pathology and health AI (both animal and human), including work with pharmaceutical companies on social media listening, startups on wearable tech and sensor-based systems through the vHive Animal Health Incubator, and guest lecturing on AI and neural networks at the University of Surrey.
+His PhD at the University of Surrey used deep learning and computer vision to detect necrosis and mitosis in canine soft-tissue sarcoma biopsies. He then worked as a data scientist and AI/ML engineer in Surrey's Centre for Vision, Speech and Signal Processing (CVSSP) on computer vision, audio classification and LLM applications, including RAG, agentic workflows, LLM evaluation, topic modelling and social media listening. Through Surrey he worked with industry partners including Zoetis and Mars Petcare, and with startups such as Aviasenze through the vHive Animal Health Incubator. He has guest lectured on neural networks at the University of Surrey.
 
-He holds a PhD in AI/ML for digital pathology (University of Surrey), an MSc in Data Science (City, University of London), and a BA in Economics and Finance (Keele University).
+He is a Visiting Researcher at the University of Surrey's Centre for Vision, Speech and Signal Processing (CVSSP), contributing to applied AI/ML research across human and animal health. This includes AI research for acoustic monitoring of poultry health with Aviasenze, research on AI safety, reliability and evaluation, an open-source liver health benchmark for AI evaluation with LiverSWAT, and research support for Marwell Wildlife's ongoing Marwell Zoo project. He is interested in open-source AI and its value for industry and enterprise. He founded LiverSWAT, a national healthcare campaign under NishkamSWAT focused on liver disease awareness and prevention, helping underserved communities access free NHS-delivered FibroScans. LiverSWAT is working with ML researchers on an open-source liver health benchmark for AI evaluation and has received a grant through the ElevenLabs Impact Program. He is a trustee of Alcohol Change UK.
+
+He holds a PhD in AI/ML for digital pathology (University of Surrey, CVSSP), an MSc in Data Science (City, University of London) and a BA (Dual Hons) in Economics and Finance (Keele University).
+
+Based in London, UK, and often in Vancouver, Canada. Eligible to work in the UK and Canada.
 
 ## Contact
 
@@ -37,7 +41,7 @@ He holds a PhD in AI/ML for digital pathology (University of Surrey), an MSc in 
 
 ## Projects
 
-- The LiverSWAT Project (https://liverswat.org): Liver health awareness and free FibroScan screening roadshows across the UK, created through NishkamSWAT charity.
+- LiverSWAT (https://www.liverswat.org): National healthcare campaign under NishkamSWAT focused on liver disease awareness and prevention, founded by Taran Rai.
 - Model Takes (https://www.modeltakes.com): Blog covering AI/ML and technology.
 
 ## Optional links

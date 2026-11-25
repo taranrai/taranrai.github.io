@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en-GB" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Taran Rai | AI/ML Engineer & Researcher</title>
 <meta name="author" content="Taran Rai">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.taranrai.me/">
-<meta name="description" content="Taran Rai is an AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI. PhD in AI/ML. Publications in Nature, Cancers, Vet Sciences, SPIE, and more.">
-<meta name="keywords" content="Taran Rai, Taranpreet Rai, AI Engineer, ML Engineer, Machine Learning, Computer Vision, Deep Learning, LLMs, Large Language Models, Applied AI, Data Science, Digital Pathology, Computational Pathology, Generative AI, AI Researcher">
+<meta name="description" content="Taran Rai is an AI/ML engineer and researcher working on computer vision, deep learning, LLMs and applied AI, mostly in animal and human health. PhD in AI/ML. Founder of LiverSWAT, a national liver health campaign. Publications in Scientific Reports, Cancers, Veterinary Sciences, SPIE and more.">
+<meta name="keywords" content="Taran Rai, Taranpreet Rai, AI Engineer, ML Engineer, Machine Learning, Computer Vision, Deep Learning, LLMs, Large Language Models, Applied AI, Data Science, Digital Pathology, Computational Pathology, Generative AI, AI Researcher, AI Safety, Open-Source AI, LiverSWAT">
+<meta name="theme-color" content="#f4f3f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0c" media="(prefers-color-scheme: dark)">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.taranrai.me/">
 <meta property="og:title" content="Taran Rai | AI/ML Engineer & Researcher">
-<meta property="og:description" content="AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI. PhD in AI/ML. Published in Nature, Cancers, SPIE, and more.">
-<meta property="og:image" content="https://www.taranrai.me/assets/images/home/lecture.png">
+<meta property="og:description" content="AI/ML engineer and researcher working on computer vision, deep learning, LLMs and applied AI. PhD in AI/ML. Founder of LiverSWAT.">
+<meta property="og:image" content="https://www.taranrai.me/assets/images/home/lecture.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="970">
 <meta property="og:site_name" content="Taran Rai">
 <meta property="og:locale" content="en_GB">
 
@@ -24,17 +28,27 @@
 <meta name="twitter:site" content="@taranraix">
 <meta name="twitter:creator" content="@taranraix">
 <meta name="twitter:title" content="Taran Rai | AI/ML Engineer & Researcher">
-<meta name="twitter:description" content="AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI.">
-<meta name="twitter:image" content="https://www.taranrai.me/assets/images/home/lecture.png">
+<meta name="twitter:description" content="AI/ML engineer and researcher working on computer vision, deep learning, LLMs and applied AI.">
+<meta name="twitter:image" content="https://www.taranrai.me/assets/images/home/lecture.jpg">
 
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/home/favicon.ico">
 <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.ico">
 
-<!-- Preconnect for performance -->
+<!-- Theme before first paint: saved choice, else system preference -->
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
@@ -44,26 +58,23 @@
   "name": "Taran Rai",
   "alternateName": ["Taranpreet Rai", "Taranpreet Singh Rai"],
   "url": "https://www.taranrai.me",
-  "image": "https://www.taranrai.me/assets/images/home/lecture.png",
-  "jobTitle": "AI/ML Engineer & Researcher",
-  "description": "AI/ML Engineer and Researcher specialising in computer vision, deep learning, LLMs, and applied AI.",
+  "image": "https://www.taranrai.me/assets/images/home/lecture.jpg",
+  "jobTitle": ["AI/ML Engineer & Researcher", "Visiting Researcher"],
+  "description": "AI/ML engineer and researcher working on computer vision, deep learning, LLMs and applied AI, mostly in animal and human health. Founder of LiverSWAT.",
   "email": "taranraiml@gmail.com",
+  "homeLocation": [{ "@type": "Place", "name": "London, United Kingdom" }, { "@type": "Place", "name": "Vancouver, Canada" }],
   "alumniOf": [
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Surrey",
-      "department": "Computer Science and Electronic Engineering"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "City, University of London"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Keele University"
-    }
+    { "@type": "CollegeOrUniversity", "name": "University of Surrey", "department": "Computer Science and Electronic Engineering" },
+    { "@type": "CollegeOrUniversity", "name": "City, University of London" },
+    { "@type": "CollegeOrUniversity", "name": "Keele University" }
   ],
-  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Deep Learning", "Large Language Models", "Digital Pathology", "Computational Pathology", "Data Science"],
+  "memberOf": [
+    { "@type": "Organization", "name": "Alcohol Change UK", "url": "https://alcoholchange.org.uk/", "description": "Trustee" }
+  ],
+  "founder": [
+    { "@type": "Organization", "name": "LiverSWAT", "url": "https://www.liverswat.org/", "description": "National healthcare campaign under NishkamSWAT focused on liver disease awareness and prevention" }
+  ],
+  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Deep Learning", "Large Language Models", "Retrieval-Augmented Generation", "Agentic Workflows", "LLM Evaluation", "Digital Pathology", "Computational Pathology", "Data Science", "AI Safety", "Open-Source AI", "One Health"],
   "sameAs": [
     "https://scholar.google.ca/citations?hl=en&user=-sK0WvQAAAAJ",
     "https://github.com/taranrai",
@@ -74,935 +85,753 @@
 }
 </script>
 <style>
-  /* DARK THEME (default) */
+  /* ---------- Tokens (dark default, as before) ---------- */
   :root, [data-theme="dark"] {
     --bg: #0a0a0c;
     --bg-elevated: #111114;
     --bg-card: rgba(255,255,255,0.025);
     --text-primary: #e2e0dd;
-    --text-secondary: #858280;
-    --text-tertiary: #4e4c4a;
+    --text-secondary: #9a9794;
+    --text-tertiary: #6f6c69;
     --accent: #c0bdb8;
     --accent-dim: #7a7874;
-    --border: rgba(255, 255, 255, 0.06);
-    --border-strong: rgba(255, 255, 255, 0.1);
-    --grid-line: rgba(255, 255, 255, 0.02);
-    --nav-bg: rgba(10, 10, 12, 0.92);
-    --card-hover-shadow: rgba(0, 0, 0, 0.4);
+    --hl: #ff7b52;
+    --border: rgba(255,255,255,0.07);
+    --border-strong: rgba(255,255,255,0.12);
+    --grid-line: rgba(255,255,255,0.022);
+    --nav-bg: rgba(10,10,12,0.9);
     --tag-bg: #e2e0dd;
     --tag-text: #0a0a0c;
-    --btn-primary-bg: #e2e0dd;
-    --btn-primary-text: #0a0a0c;
-    --btn-primary-hover: #fff;
-    --btn-primary-hover-text: #0a0a0c;
-    --divider: linear-gradient(90deg, var(--accent-dim), var(--accent), var(--accent-dim));
-    --pixel-1: #858280;
-    --pixel-2: #6e6c6a;
-    --pixel-3: #4e4c4a;
-    --pixel-4: #9a9895;
-    --pixel-5: #5e5c5a;
+    --tile-bg: #ecebe8;
+    --tile-border: transparent;
+    --shadow: rgba(0,0,0,0.45);
+    color-scheme: dark;
   }
-
-  /* LIGHT THEME */
   [data-theme="light"] {
     --bg: #f4f3f1;
     --bg-elevated: #eae8e5;
     --bg-card: rgba(255,255,255,0.6);
     --text-primary: #141312;
     --text-secondary: #4a4846;
-    --text-tertiary: #7a7876;
+    --text-tertiary: #75726f;
     --accent: #3a3836;
     --accent-dim: #8a8886;
-    --border: rgba(20, 19, 18, 0.09);
-    --border-strong: rgba(20, 19, 18, 0.16);
-    --grid-line: rgba(20, 19, 18, 0.025);
-    --nav-bg: rgba(244, 243, 241, 0.92);
-    --card-hover-shadow: rgba(0, 0, 0, 0.05);
+    --hl: #c2410c;
+    --border: rgba(20,19,18,0.09);
+    --border-strong: rgba(20,19,18,0.16);
+    --grid-line: rgba(20,19,18,0.03);
+    --nav-bg: rgba(244,243,241,0.9);
     --tag-bg: #141312;
     --tag-text: #f4f3f1;
-    --btn-primary-bg: #141312;
-    --btn-primary-text: #f4f3f1;
-    --btn-primary-hover: #3a3836;
-    --btn-primary-hover-text: #f4f3f1;
-    --divider: linear-gradient(90deg, var(--accent-dim), var(--accent), var(--accent-dim));
-    --pixel-1: #b0aeac;
-    --pixel-2: #c8c6c4;
-    --pixel-3: #9a9896;
-    --pixel-4: #d0cecc;
-    --pixel-5: #a8a6a4;
+    --tile-bg: #ffffff;
+    --tile-border: rgba(20,19,18,0.08);
+    --shadow: rgba(0,0,0,0.07);
+    color-scheme: light;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
   body {
-    background: var(--bg);
-    color: var(--text-secondary);
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    line-height: 1.7;
-    overflow-x: hidden;
+    background: var(--bg); color: var(--text-secondary);
+    font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 16px; line-height: 1.7; overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
     transition: background 0.4s ease, color 0.4s ease;
   }
+  img { max-width: 100%; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--hl); outline-offset: 3px; border-radius: 2px; }
+  ::selection { background: var(--text-primary); color: var(--bg); }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: 0; }
+  .skip { position: absolute; left: -999px; top: 8px; z-index: 300; background: var(--tag-bg); color: var(--tag-text); padding: 8px 14px; border-radius: 2px; font-weight: 600; }
+  .skip:focus { left: 8px; }
 
-  /* PIXEL GRID */
+  /* Pixel grid background (from the current site) */
   .pixel-bg {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none; z-index: 0;
-    background-image:
-      linear-gradient(var(--grid-line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: 24px 24px;
-    transition: background-image 0.4s ease;
   }
 
-  /* FLOATING PIXEL BLOCKS */
-  .pixel-decor { position: fixed; pointer-events: none; z-index: 1; }
-  .pixel-block { position: absolute; border-radius: 0; animation: pixelFloat 12s ease-in-out infinite; }
-  .pixel-block--1 { width: 16px; height: 16px; background: var(--pixel-1); top: 15%; left: 5%; opacity: 0.15; animation-duration: 15s; }
-  .pixel-block--2 { width: 12px; height: 12px; background: var(--pixel-2); top: 30%; right: 8%; opacity: 0.12; animation-duration: 18s; animation-delay: -3s; }
-  .pixel-block--3 { width: 20px; height: 20px; background: var(--pixel-3); bottom: 20%; left: 8%; opacity: 0.1; animation-duration: 20s; animation-delay: -7s; }
-  .pixel-block--4 { width: 10px; height: 10px; background: var(--pixel-4); top: 60%; right: 5%; opacity: 0.12; animation-duration: 14s; animation-delay: -2s; }
-  .pixel-block--5 { width: 14px; height: 14px; background: var(--pixel-5); bottom: 35%; left: 4%; opacity: 0.08; animation-duration: 22s; animation-delay: -10s; }
+  /* Pixel mark */
+  .pixel { display: inline-grid; grid-template-columns: repeat(3, 6px); gap: 2px; flex-shrink: 0; }
+  .pixel span { width: 6px; height: 6px; background: var(--text-primary); }
+  .pixel span:nth-child(even) { opacity: 0.45; }
+  .brand { display: inline-flex; align-items: center; gap: 0.65rem; font-weight: 700; color: var(--text-primary); text-decoration: none; letter-spacing: 0.02em; font-size: 1.02rem; }
 
-  @keyframes pixelFloat {
-    0%, 100% { transform: translate(0, 0); }
-    25% { transform: translate(8px, -12px); }
-    50% { transform: translate(-4px, 8px); }
-    75% { transform: translate(12px, 4px); }
-  }
-
-  /* NAV */
-  .nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    padding: 0 2rem; transition: all 0.3s ease; background: transparent;
-  }
-  .nav.scrolled {
-    background: var(--nav-bg);
-    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 1px 0 var(--border);
-  }
-  .nav__inner {
-    max-width: 960px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between; height: 64px;
-  }
-  .nav__logo {
-    font-size: 1rem; font-weight: bold; color: var(--text-primary);
-    text-decoration: none; letter-spacing: 0.02em;
-    display: flex; align-items: center; gap: 0.6rem;
-    transition: color 0.4s;
-  }
-  .nav__logo-pixel { display: inline-grid; grid-template-columns: repeat(3, 6px); gap: 2px; }
-  .nav__logo-pixel span { width: 6px; height: 6px; border-radius: 0px; background: var(--text-primary); }
-  .nav__logo-pixel span:nth-child(2) { opacity: 0.5; }
-  .nav__logo-pixel span:nth-child(4) { opacity: 0.5; }
-  .nav__logo-pixel span:nth-child(6) { opacity: 0.5; }
-  .nav__logo-pixel span:nth-child(8) { opacity: 0.5; }
-
-  .nav__right { display: flex; align-items: center; gap: 1.75rem; }
-
-  .nav__links { display: flex; gap: 1.75rem; list-style: none; }
-  .nav__links a {
-    font-size: 0.8rem; font-weight: bold; color: var(--text-tertiary);
-    text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em;
-    transition: color 0.2s; padding: 2px 0; border-bottom: 2px solid transparent;
-  }
-  .nav__links a:hover, .nav__links a.active { color: var(--accent); border-bottom-color: var(--accent); }
-
-  /* THEME TOGGLE */
+  /* Theme toggle (current site style) */
   .theme-toggle {
-    background: none; border: 2px solid var(--border-strong);
-    border-radius: 2px; padding: 5px 8px;
-    cursor: pointer; display: flex; align-items: center; gap: 6px;
-    font-size: 0.65rem; font-weight: bold; text-transform: uppercase;
-    letter-spacing: 0.08em; color: var(--text-tertiary);
-    transition: all 0.2s;
+    background: none; border: 2px solid var(--border-strong); border-radius: 2px;
+    padding: 6px 10px; min-height: 36px; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px;
+    font: 700 0.66rem/1 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--text-tertiary); transition: border-color 0.2s, color 0.2s;
   }
   .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
-  .theme-toggle__icon { font-size: 0.85rem; line-height: 1; }
+  .theme-toggle__icon { font-size: 0.9rem; }
+  [data-theme="dark"] .theme-toggle__icon::before { content: '☀'; }
+  [data-theme="light"] .theme-toggle__icon::before { content: '☾'; }
+  [data-theme="dark"] .theme-toggle__label::before { content: 'Light'; }
+  [data-theme="light"] .theme-toggle__label::before { content: 'Dark'; }
 
-  .nav__toggle {
-    display: none; flex-direction: column; gap: 4px;
-    cursor: pointer; background: none; border: none; padding: 6px;
+  /* London clock */
+  .clock { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-tertiary); font-weight: 500; }
+  .clock time { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+  .dot { width: 7px; height: 7px; background: var(--hl); display: inline-block; animation: pulse 2.6s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .dot--alt { background: transparent; box-shadow: inset 0 0 0 1.5px var(--hl); animation: none; }
+  .clocks { display: grid; gap: 4px; }
+  .clock--bar { gap: 5px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; }
+  .clock__sep { color: var(--text-tertiary); margin: 0 1px; }
+  .contact .where { margin-top: 1.25rem; font-size: 0.92rem; }
+
+  /* ---------- Layout: sidebar + main (option C) ---------- */
+  .shell {
+    position: relative; z-index: 2;
+    display: grid; grid-template-columns: 260px minmax(0, 680px); gap: 80px;
+    width: min(100% - 64px, 1100px); margin: 0 auto;
   }
-  .nav__toggle span { display: block; width: 20px; height: 2px; background: var(--text-primary); transition: all 0.3s; }
-  .nav__toggle.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
-  .nav__toggle.open span:nth-child(2) { opacity: 0; }
-  .nav__toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
-
-  /* CONTENT */
-  .content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; padding: 0 2rem; }
-
-  /* HERO */
-  .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 8rem 0 6rem; position: relative; }
-
-  .hero__top {
-    display: flex; align-items: center; gap: 3rem;
+  .side { position: sticky; top: 0; height: 100vh; height: 100dvh; padding: 48px 0 36px; display: flex; flex-direction: column; }
+  .side__role { margin-top: 14px; font-size: 0.92rem; line-height: 1.5; color: var(--text-tertiary); }
+  .index { list-style: none; margin-top: 44px; }
+  .index a, .menu__nav a {
+    display: flex; align-items: baseline; gap: 14px; text-decoration: none;
+    color: var(--text-tertiary); transition: color 0.2s;
   }
-  .hero__text { flex: 1; }
+  .index a { padding: 6px 0; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+  .index .n, .menu__nav .n { font-size: 0.68rem; font-variant-numeric: tabular-nums; width: 18px; color: var(--text-tertiary); }
+  .index a:hover, .index a.active { color: var(--text-primary); }
+  .index a.active .n { color: var(--hl); }
+  .side__foot { margin-top: auto; display: grid; gap: 16px; justify-items: start; }
+  .socials { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  .socials a { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); text-decoration: none; transition: color 0.2s; }
+  .socials a:hover { color: var(--text-primary); }
 
-  .hero__portrait {
-    width: 180px; height: 180px; border-radius: 4px; overflow: hidden;
-    flex-shrink: 0; opacity: 0; animation: slideIn 0.6s ease-out 0.4s forwards;
-    border: 2px solid var(--border-strong);
-  }
-  .hero__portrait img {
-    width: 100%; height: 100%; object-fit: cover;
-  }
+  /* ---------- Mobile top bar + collapsing menu ---------- */
+  .topbar { display: none; }
+  .menu { display: none; }
 
+  /* ---------- Main ---------- */
+  .main { padding: 48px 0 0; min-width: 0; }
+
+  .hero { padding: 40px 0 72px; }
+  .hero__top { display: flex; align-items: center; gap: 2.5rem; justify-content: space-between; }
   .hero__tag {
     display: inline-flex; align-items: center; gap: 0.5rem;
     background: var(--tag-bg); color: var(--tag-text);
-    font-size: 0.65rem; font-weight: 600; text-transform: uppercase;
-    letter-spacing: 0.1em; padding: 0.35rem 0.8rem;
-    border-radius: 2px; width: fit-content; margin-bottom: 1.5rem;
-    opacity: 0; animation: slideIn 0.6s ease-out 0.3s forwards;
+    font-size: 0.66rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+    padding: 0.35rem 0.8rem; border-radius: 2px; margin-bottom: 1.4rem;
   }
-  .hero__tag::before { content: ''; width: 6px; height: 6px; background: var(--tag-text); border-radius: 1px; opacity: 0.4; }
-
-  .hero__name {
-    font-size: clamp(2.8rem, 7vw, 4.5rem);
-    font-weight: 700; color: var(--text-primary);
-    line-height: 1.1; margin-bottom: 1.25rem;
-    opacity: 0; animation: slideIn 0.6s ease-out 0.5s forwards;
-    transition: color 0.4s;
+  .hero__tag::before { content: ''; width: 6px; height: 6px; background: var(--tag-text); opacity: 0.4; }
+  .hero__name { font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 700; color: var(--text-primary); line-height: 1.05; letter-spacing: -0.01em; }
+  .hero__portrait { width: 168px; height: 168px; border-radius: 4px; overflow: hidden; border: 2px solid var(--border-strong); flex-shrink: 0; }
+  .hero__portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .lede { font-size: clamp(1.3rem, 2.4vw, 1.6rem); line-height: 1.4; color: var(--text-primary); font-weight: 400; letter-spacing: -0.015em; margin: 2rem 0 1.1rem; max-width: 34ch; }
+  .lede .serif { font-size: 1.1em; }
+  .hero p.body { max-width: 60ch; }
+  .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; }
+  .btn {
+    font-size: 0.8rem; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 0.7rem 1.3rem; border-radius: 2px; transition: all 0.25s; display: inline-flex; align-items: center; min-height: 44px;
   }
-  .hero__gradient-text {
-    background: linear-gradient(135deg, var(--accent), var(--accent-dim), var(--accent));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-  }
-
-  .hero__subtitle {
-    font-size: 1.05rem; color: var(--text-secondary);
-    max-width: 520px; line-height: 1.75; margin-bottom: 2.5rem;
-    opacity: 0; animation: slideIn 0.6s ease-out 0.7s forwards;
-    transition: color 0.4s;
-  }
-
-  .hero__actions {
-    display: flex; gap: 0.75rem; flex-wrap: wrap;
-    opacity: 0; animation: slideIn 0.6s ease-out 0.9s forwards;
-  }
-  .hero__actions a {
-    font-size: 0.8rem; font-weight: bold; text-decoration: none;
-    text-transform: uppercase; letter-spacing: 0.06em;
-    padding: 0.6rem 1.3rem; border-radius: 2px; transition: all 0.25s;
-  }
-  .btn--primary { background: var(--btn-primary-bg); color: var(--btn-primary-text); }
-  .btn--primary:hover { background: var(--btn-primary-hover); color: var(--btn-primary-hover-text); }
+  .btn--primary { background: var(--tag-bg); color: var(--tag-text); }
+  .btn--primary:hover { opacity: 0.85; }
   .btn--ghost { border: 2px solid var(--border-strong); color: var(--text-secondary); }
   .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
 
-  .scroll-hint {
-    position: absolute; bottom: 2.5rem; left: 0;
-    display: flex; align-items: center; gap: 0.6rem;
-    opacity: 0; animation: slideIn 0.6s ease-out 1.4s forwards;
+  a.link, .prose a {
+    color: var(--text-primary); text-decoration: none; font-weight: 600;
+    border-bottom: 1.5px solid var(--border-strong); transition: border-color 0.2s;
   }
-  .scroll-hint__bar { width: 24px; height: 2px; background: var(--accent); }
-  .scroll-hint__text { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); }
+  a.link:hover, .prose a:hover { border-color: var(--hl); }
 
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateY(12px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* WARM DIVIDER */
-  .warm-bar {
-    height: 3px; margin: 0; border: none;
-    background: linear-gradient(90deg, var(--accent), var(--accent-dim), var(--accent), var(--accent));
-    border-radius: 2px;
-  }
-
-  /* SECTIONS */
-  .section {
-    padding: 4.5rem 0; border-top: 2px solid var(--border);
-    opacity: 0; transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.4s ease;
-  }
-  .section.visible { opacity: 1; transform: translateY(0); }
-
+  /* Sections (current site) */
+  .section { padding: 4.5rem 0; border-top: 2px solid var(--border); }
+  .js .section { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .js .section.visible { opacity: 1; transform: none; }
   .section__label {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    font-size: 0.7rem; font-weight: bold; text-transform: uppercase;
-    letter-spacing: 0.1em; margin-bottom: 1.25rem; color: var(--accent);
+    display: inline-flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem;
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent);
   }
-  .section__label::before {
-    content: ''; display: block; width: 8px; height: 8px;
-    background: var(--accent); border-radius: 1px;
+  .section__label::before { content: ''; width: 8px; height: 8px; background: var(--accent); }
+  .section__label .n { color: var(--hl); font-variant-numeric: tabular-nums; }
+  .section__heading { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--text-primary); line-height: 1.2; margin-bottom: 1.25rem; }
+  .prose { max-width: 62ch; }
+  .prose p + p { margin-top: 1rem; }
+  .fine { font-size: 0.85rem; color: var(--text-tertiary); margin-top: 1rem; }
+
+  /* ---------- Logo tiles ---------- */
+  .logos-block { padding: 0 0 4.5rem; }
+  .logos-block + .logos-block { padding-top: 0; }
+  .logos { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .logos--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tile {
+    height: 100%; display: flex; flex-direction: column; gap: 2px; text-decoration: none;
+    padding: 12px 12px 14px; border: 2px solid var(--border); border-radius: 3px; background: var(--bg-card);
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  }
+  a.tile:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: 0 6px 18px var(--shadow); }
+  .tile__logo {
+    height: 76px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;
+    background: var(--tile-bg); border: 1px solid var(--tile-border); border-radius: 2px; padding: 14px 16px;
+  }
+  .tile__logo img { max-height: 34px; max-width: 100%; width: auto; display: block; object-fit: contain; }
+  .tile__logo img.wide { max-height: 40px; }
+  .tile__logo img.tall { max-height: 54px; }
+  .tile__logo img.liver { max-height: 50px; background: #c0392b; padding: 5px 8px; border-radius: 3px; }
+  .tile__logo img.photo { max-height: 50px; border-radius: 3px; }
+  .wordmark { font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; color: #2a2826; }
+  .tile__text { display: flex; flex-direction: column; gap: 2px; }
+  .tile__name { font-size: 0.86rem; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+  .tile__cap { font-size: 0.74rem; color: var(--text-tertiary); line-height: 1.4; }
+
+  /* Heading row with count (founder style) */
+  .sec-h { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .sec-h__count { font-size: 0.72rem; font-weight: 700; color: var(--text-tertiary); font-variant-numeric: tabular-nums; letter-spacing: 0.06em; }
+
+
+  /* Currently */
+  .now__list { list-style: none; border-top: 1px solid var(--border-strong); margin-top: 0; }
+  .now__list li { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--border); font-size: 0.94rem; line-height: 1.5; }
+  .now__list b { color: var(--text-primary); font-weight: 600; }
+  .vr__lead { font-size: 0.94rem; margin-bottom: 0.9rem; max-width: 62ch; }
+  .vr__lead b { color: var(--text-primary); font-weight: 600; }
+
+  /* Collaborations strip: real logos, one tone at rest, brand colour on hover */
+  .strip { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; align-items: center; margin: 0.5rem 0 0.25rem; }
+  .strip a, .strip span.lg { height: 64px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: transform 0.2s; }
+  .strip a:hover { transform: translateY(-2px); }
+  .strip img { max-width: 96px; max-height: 26px; width: auto; display: block; }
+  .strip img.wide { max-width: 110px; max-height: 30px; }
+  .strip img.mark { max-height: 40px; }
+  .strip--media { margin: 0.25rem 0 0.5rem; }
+  .strip img.mark { max-height: 40px; }
+  .strip .wm { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: var(--text-secondary); }
+  @media (hover: hover) {
+    .strip img { filter: grayscale(1) brightness(0); opacity: 0.6; transition: filter 0.25s, opacity 0.25s; }
+    [data-theme="dark"] .strip img { filter: grayscale(1) brightness(0) invert(1); opacity: 0.65; }
+    .strip a:hover img { filter: none; opacity: 1; }
+    [data-theme="dark"] .strip a:hover img { filter: none; background: var(--tile-bg); box-shadow: 0 0 0 6px var(--tile-bg); border-radius: 1px; }
+    .strip .wm { opacity: 0.75; }
+  }
+  @media (hover: none) {
+    [data-theme="dark"] .strip img { background: var(--tile-bg); box-shadow: 0 0 0 5px var(--tile-bg); border-radius: 1px; }
   }
 
-  .section__heading {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: bold; color: var(--text-primary);
-    line-height: 1.2; margin-bottom: 1.25rem;
-    transition: color 0.4s;
+  /* Work & interests cards (founder style) */
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 0.5rem; }
+  .card {
+    all: unset; box-sizing: border-box; cursor: pointer; display: flex; gap: 14px; align-items: baseline;
+    padding: 1.1rem 1.2rem 1.2rem; border: 2px solid var(--border); border-radius: 3px; background: var(--bg-card);
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
   }
+  .card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+  .card:focus-visible { outline: 2px solid var(--hl); outline-offset: 3px; }
+  .card[aria-selected="true"] { border-color: var(--text-primary); }
+  .card__n { font-size: 0.72rem; font-weight: 700; color: var(--text-tertiary); border-bottom: 2px solid currentColor; padding-bottom: 3px; font-variant-numeric: tabular-nums; }
+  .card[aria-selected="true"] .card__n { color: var(--hl); }
+  .card__body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .card__t { font-size: 1.05rem; font-weight: 600; color: var(--text-primary); line-height: 1.3; }
+  .card__d { font-size: 0.82rem; color: var(--text-tertiary); line-height: 1.45; }
+  .panel { margin-top: 1.4rem; padding-top: 1.4rem; border-top: 1px dashed var(--border-strong); animation: open 0.3s ease; }
+  .panel[hidden] { display: none; }
+  .panel.prose { max-width: none; }
+  .panel.prose > p { max-width: 66ch; }
+  .panel ul { list-style: none; margin: 0.9rem 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; }
+  .panel li { padding: 3px 0 3px 22px; position: relative; font-size: 0.92rem; }
+  .panel li::before { content: ''; position: absolute; left: 2px; top: 0.75em; width: 6px; height: 6px; background: var(--accent-dim); }
+  @keyframes open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 
-  .section__text { max-width: 620px; transition: color 0.4s; }
-  .section__text p + p { margin-top: 1rem; }
+  /* ---------- Accordion (option C) ---------- */
+  .acc { margin-top: 1.75rem; border-top: 1px solid var(--border-strong); }
+  .acc details { border-bottom: 1px solid var(--border-strong); }
+  .acc summary {
+    list-style: none; cursor: pointer; display: grid; grid-template-columns: 40px 1fr 20px; gap: 8px; align-items: center;
+    padding: 1.2rem 0; min-height: 56px;
+  }
+  .acc summary::-webkit-details-marker { display: none; }
+  .acc summary .n { font-size: 0.75rem; font-weight: 700; color: var(--text-tertiary); font-variant-numeric: tabular-nums; }
+  .acc summary h3 { font-size: clamp(1.15rem, 2.4vw, 1.4rem); font-weight: 600; color: var(--text-primary); line-height: 1.25; transition: color 0.2s; }
+  .acc summary:hover h3 { color: var(--accent); }
+  .acc .pl { width: 14px; height: 14px; position: relative; justify-self: end; }
+  .acc .pl::before, .acc .pl::after { content: ''; position: absolute; left: 0; top: 6px; width: 14px; height: 2px; background: var(--text-primary); transition: transform 0.3s; }
+  .acc .pl::after { transform: rotate(90deg); }
+  .acc details[open] .pl::after { transform: rotate(0); }
+  .acc details[open] summary .n { color: var(--hl); }
+  .acc .in { padding: 0 0 1.6rem 48px; animation: open 0.35s ease; }
+  @keyframes open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  .acc ul { list-style: none; margin: 0.9rem 0; }
+  .acc li { padding: 3px 0 3px 22px; position: relative; }
+  .acc li::before { content: ''; position: absolute; left: 2px; top: 0.75em; width: 6px; height: 6px; background: var(--accent-dim); }
+  .badges { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 1.1rem; }
+  .badges a { display: inline-flex; align-items: center; height: 44px; padding: 6px 10px; background: var(--tile-bg); border: 1px solid var(--tile-border); border-radius: 2px; }
+  .badges img { max-height: 30px; width: auto; display: block; }
+  .badges .liver { background: #c0392b; padding: 3px 6px; border-radius: 2px; }
+  .badges .eleven { max-height: 13px; }
 
-  a.link {
-    color: var(--accent); text-decoration: none;
-    border-bottom: 1.5px solid rgba(192, 189, 184, 0.2);
-    font-weight: bold; transition: border-color 0.2s;
-  }
-  a.link:hover { border-color: var(--accent); }
+  /* Education */
+  .edu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 2rem; }
+  .edu div { padding: 1rem 1.1rem; border: 2px solid var(--border); border-radius: 3px; background: var(--bg-card); font-size: 0.88rem; line-height: 1.5; }
+  .edu b { display: block; color: var(--text-primary); font-size: 0.95rem; margin-bottom: 2px; }
+  .subhead { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin: 2.5rem 0 1rem; }
 
-  /* PASSIONS */
-  .passions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-  .passion-card {
-    padding: 1.5rem; border-radius: 3px; border: 2px solid var(--border);
-    background: var(--bg-card); transition: all 0.25s; position: relative;
+  /* Rows: publications, media, posts */
+  .rows { list-style: none; margin-top: 1.5rem; }
+  .rows + .rows { margin-top: 0; }
+  .row { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 1rem; padding: 1.15rem 0; border-bottom: 1px solid var(--border); }
+  .row__y { font-size: 0.78rem; font-weight: 700; color: var(--text-tertiary); font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .row__t { font-size: 0.98rem; font-weight: 600; color: var(--text-primary); line-height: 1.4; }
+  .row__t a { text-decoration: none; transition: color 0.2s; }
+  .row__t a:hover { color: var(--accent); text-decoration: underline; text-decoration-color: var(--hl); text-underline-offset: 3px; }
+  .row__m { font-size: 0.82rem; color: var(--text-tertiary); margin-top: 0.2rem; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+  .row__a { font-size: 0.78rem; color: var(--text-tertiary); margin-top: 0.15rem; }
+  .chip { font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 7px; border: 1px solid var(--border-strong); border-radius: 2px; color: var(--text-secondary); font-style: normal; }
+  .more-bar { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-top: 1.5rem; }
+  .more {
+    font: 700 0.78rem/1 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.06em;
+    background: none; border: 2px solid var(--border-strong); border-radius: 2px; color: var(--text-secondary);
+    padding: 0.7rem 1.1rem; min-height: 44px; cursor: pointer; transition: border-color 0.2s, color 0.2s;
   }
-  .passion-card::after {
-    content: ''; position: absolute; top: 0; left: 0;
-    width: 100%; height: 3px; border-radius: 3px 3px 0 0;
-    background: var(--card-color, var(--accent));
-    opacity: 0; transition: opacity 0.25s;
-  }
-  .passion-card:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: 0 4px 16px var(--card-hover-shadow); }
-  .passion-card:hover::after { opacity: 1; }
+  .more:hover { border-color: var(--accent); color: var(--accent); }
+  .more::before { content: '+ '; }
+  .more[aria-expanded="true"]::before { content: '– '; }
+  .ext { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); text-decoration: none; border-bottom: 2px solid var(--border-strong); padding-bottom: 2px; }
+  .ext:hover { border-color: var(--hl); }
 
-  .passion-card:nth-child(1) { --card-color: var(--accent); }
-  .passion-card:nth-child(2) { --card-color: var(--accent-dim); }
-  .passion-card:nth-child(3) { --card-color: var(--accent-dim); }
-  .passion-card:nth-child(4) { --card-color: var(--accent); }
+  /* Media outlets strip */
+  .outlets { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 0; margin-top: 0.5rem; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); }
+  .outlets li { display: inline-flex; align-items: center; }
+  .outlets li + li::before { content: ''; width: 4px; height: 4px; background: var(--accent-dim); margin: 0 14px; }
+  .outlets img { height: 15px; width: auto; display: block; }
+  [data-theme="dark"] .outlets img { filter: invert(1); }
 
-  .passion-card__icon { font-size: 1.2rem; margin-bottom: 0.6rem; }
-  .passion-card__logo {
-    width: 36px; height: 36px; object-fit: contain;
-    background: #c0392b; border-radius: 4px; padding: 4px;
-  }
-  .passion-card__title { font-size: 0.95rem; font-weight: bold; color: var(--text-primary); margin-bottom: 0.4rem; transition: color 0.4s; }
-  .passion-card__desc { font-size: 0.82rem; color: var(--text-tertiary); line-height: 1.6; transition: color 0.4s; }
-  .passion-card__desc a { color: var(--accent); text-decoration: none; font-weight: bold; }
+  /* Quotes (only rendered once real recommendations exist) */
+  .quotes { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
+  .quote { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1.25rem; }
+  .quote blockquote { font-size: 1.1rem; color: var(--text-primary); line-height: 1.55; }
+  .quote figcaption { font-size: 0.82rem; margin-top: 0.6rem; color: var(--text-tertiary); }
+  .quote figcaption b { color: var(--text-secondary); }
 
-  /* PUBLICATIONS */
-  .pub-list { margin-top: 1.75rem; }
-  .pub-item {
-    padding: 1.25rem 0; border-bottom: 1px solid var(--border);
-    display: grid; grid-template-columns: 54px 1fr; gap: 1rem; align-items: start;
-    transition: border-color 0.4s;
+  .subscribe { margin-top: 2rem; overflow: visible; }
+  .subscribe__label { display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 0.6rem; }
+  .subscribe__row { display: flex; gap: 0.5rem; max-width: 460px; }
+  .subscribe input {
+    flex: 1; min-width: 0; min-height: 44px; padding: 0 0.9rem; font: 400 1rem 'Outfit', sans-serif;
+    color: var(--text-primary); background: transparent; border: 2px solid var(--border-strong); border-radius: 2px; transition: border-color 0.2s;
   }
-  .pub-item:last-child { border-bottom: none; }
-  .pub-year {
-    font-size: 0.8rem; font-weight: bold; color: #fff;
-    background: var(--accent); padding: 0.2rem 0.5rem;
-    border-radius: 2px; text-align: center; width: fit-content;
-  }
-  .pub-info__title { font-size: 0.92rem; font-weight: bold; color: var(--text-primary); line-height: 1.4; margin-bottom: 0.2rem; transition: color 0.4s; }
-  .pub-info__title a { color: var(--text-primary); text-decoration: none; transition: color 0.2s; }
-  .pub-info__title a:hover { color: var(--accent); }
-  .pub-info__journal { font-size: 0.78rem; color: var(--text-tertiary); font-style: italic; }
-  .pub-info__authors { font-size: 0.78rem; color: var(--text-tertiary); margin-top: 0.15rem; }
+  .subscribe input::placeholder { color: var(--text-tertiary); }
+  .subscribe input:focus { outline: none; border-color: var(--text-primary); }
+  .subscribe button { border: 0; cursor: pointer; font-family: 'Outfit', sans-serif; }
+  .subscribe .fine { margin-top: 0.6rem; }
 
-  /* MEDIA */
-  .media-list { margin-top: 1.75rem; }
-  .media-item {
-    padding: 1.1rem 0; border-bottom: 1px solid var(--border);
-    display: grid; grid-template-columns: 90px 1fr; gap: 1rem; align-items: start;
-    transition: border-color 0.4s;
-  }
-  .media-item:last-child { border-bottom: none; }
-  .media-date {
-    font-size: 0.75rem; font-weight: bold; color: var(--text-tertiary);
-    letter-spacing: 0.02em; padding-top: 2px; white-space: nowrap;
-  }
-  .media-info__title {
-    font-size: 0.92rem; font-weight: bold; color: var(--text-primary);
-    line-height: 1.4; margin-bottom: 0.15rem; transition: color 0.4s;
-  }
-  .media-info__title a {
-    color: var(--text-primary); text-decoration: none; transition: color 0.2s;
-  }
-  .media-info__title a:hover { color: var(--orange); }
-  .media-info__source {
-    font-size: 0.78rem; color: var(--orange); font-weight: bold;
-  }
-  .media-info__author {
-    font-size: 0.75rem; color: var(--text-tertiary); font-style: italic;
-  }
+  /* Contact */
+  .contact-email { display: inline-block; margin-top: 0.5rem; font-size: clamp(1.15rem, 3.6vw, 1.6rem); font-weight: 600; color: var(--text-primary); text-decoration: none; border-bottom: 2px solid var(--border-strong); padding-bottom: 2px; transition: border-color 0.2s; overflow-wrap: anywhere; }
+  .contact-email:hover { border-color: var(--hl); }
+  .contact .socials { margin-top: 1.5rem; gap: 10px 22px; }
 
-  /* BLOG */
-  .blog-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-  .blog-card {
-    border: 2px solid var(--border); border-radius: 3px;
-    overflow: hidden; background: var(--bg-card);
-    transition: all 0.25s; text-decoration: none; color: inherit;
-    display: flex; flex-direction: column;
-  }
-  .blog-card:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: 0 4px 16px var(--card-hover-shadow); }
-  .blog-card__img {
-    width: 100%; height: 140px; object-fit: cover;
-    background: linear-gradient(135deg, var(--accent), var(--accent));
-    display: block;
-  }
-  .blog-card__body { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
-  .blog-card__title {
-    font-size: 0.85rem; font-weight: bold; color: var(--text-primary);
-    line-height: 1.35; margin-bottom: 0.4rem;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-    transition: color 0.4s;
-  }
-  .blog-card__date { font-size: 0.7rem; color: var(--text-tertiary); margin-top: auto; padding-top: 0.5rem; }
-  .blog-loading { text-align: center; padding: 2rem; font-size: 0.85rem; color: var(--text-tertiary); font-weight: bold; }
-  .blog-cta { text-align: center; margin-top: 1.5rem; }
-  .blog-cta a {
-    font-size: 0.8rem; font-weight: bold; text-decoration: none;
-    text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--accent); border-bottom: 2px solid rgba(192,189,184,0.2);
-    padding-bottom: 2px; transition: border-color 0.2s;
-  }
-  .blog-cta a:hover { border-color: var(--accent); }
+  .warm-bar { height: 3px; border: none; background: linear-gradient(90deg, var(--accent), var(--accent-dim), var(--accent)); border-radius: 2px; }
+  footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 2rem 0 2.5rem; font-size: 0.74rem; font-weight: 700; color: var(--text-tertiary); letter-spacing: 0.04em; }
+  footer a { color: var(--text-tertiary); text-decoration: none; }
+  footer a:hover { color: var(--text-primary); }
 
-  .blog-subscribe {
-    margin-top: 2rem; text-align: center;
-    border-radius: 3px; overflow: hidden;
-  }
-  [data-theme="dark"] .blog-subscribe iframe {
-    filter: invert(1) hue-rotate(180deg);
-  }
+  /* ---------- Tablet and mobile ---------- */
+  @media (max-width: 1023px) {
+    .shell { grid-template-columns: minmax(0, 1fr); gap: 0; width: min(100% - 40px, 720px); }
+    .side { display: none; }
+    .main { padding-top: 64px; }
 
-  /* CONTACT */
-  .contact-grid { display: flex; align-items: center; gap: 2.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
-  .contact-email {
-    font-size: 1.05rem; font-weight: bold; color: var(--accent);
-    text-decoration: none; border-bottom: 2px solid rgba(192,189,184,0.2);
-    padding-bottom: 2px; transition: border-color 0.2s;
-  }
-  .contact-email:hover { border-color: var(--accent); }
-  .contact-socials { display: flex; gap: 1.25rem; }
-  .contact-socials a {
-    font-size: 0.75rem; font-weight: bold; text-transform: uppercase;
-    letter-spacing: 0.06em; color: var(--text-tertiary);
-    text-decoration: none; transition: color 0.2s;
-  }
-  .contact-socials a:hover { color: var(--accent); }
-
-  footer {
-    text-align: center; padding: 2.5rem 0;
-    font-size: 0.72rem; font-weight: bold; color: var(--text-tertiary);
-    letter-spacing: 0.04em;
-  }
-  footer hr { margin-bottom: 1.5rem; }
-
-  /* RESPONSIVE */
-  @media (max-width: 768px) {
-    .nav__links { display: none; }
-    .nav__links.open {
-      display: flex; flex-direction: column;
-      position: absolute; top: 64px; left: 0; right: 0;
-      background: var(--nav-bg); backdrop-filter: blur(16px);
-      padding: 1.25rem 2rem; gap: 1rem;
-      box-shadow: 0 1px 0 var(--border);
+    .topbar {
+      display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 120;
+      height: 64px; padding: 0 20px; padding-top: env(safe-area-inset-top);
+      align-items: center; justify-content: space-between; gap: 12px;
+      transition: background 0.3s, box-shadow 0.3s;
     }
-    .nav__toggle { display: flex; }
-    .nav__right { gap: 1rem; }
-    .theme-toggle span:not(.theme-toggle__icon) { display: none; }
-    .hero { padding: 6rem 0 4rem; min-height: auto; }
-    .hero__top { flex-direction: column; gap: 2rem; align-items: center; text-align: center; }
-    .hero__portrait { width: 140px; height: 140px; order: -1; }
-    .hero__text { display: flex; flex-direction: column; align-items: center; }
-    .hero__tag { order: 2; margin-bottom: 1rem; }
-    .hero__name { order: 1; margin-bottom: 0.5rem; }
-    .hero__subtitle { order: 3; }
-    .hero__actions { order: 4; justify-content: center; }
-    .scroll-hint { display: none; }
-    .passions-grid { grid-template-columns: 1fr; }
-    .blog-grid { grid-template-columns: 1fr; }
-    .pub-item { grid-template-columns: 1fr; gap: 0.4rem; }
-    .media-item { grid-template-columns: 1fr; gap: 0.2rem; }
-    .contact-grid { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-    .pixel-decor { display: none; }
-    .content { padding: 0 1.25rem; }
+    .topbar.scrolled, .menu-open .topbar { background: var(--nav-bg); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 1px 0 var(--border); }
+    .topbar__right { display: flex; align-items: center; gap: 10px; }
+    .burger {
+      width: 44px; height: 44px; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+      background: none; border: 2px solid var(--border-strong); border-radius: 2px; cursor: pointer;
+    }
+    .burger span { width: 18px; height: 2px; background: var(--text-primary); transition: transform 0.3s, opacity 0.2s; }
+    .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .menu {
+      display: flex; flex-direction: column; position: fixed; inset: 64px 0 0 0; z-index: 110;
+      background: var(--bg); padding: 12px 20px calc(28px + env(safe-area-inset-bottom));
+      overflow-y: auto; overscroll-behavior: contain;
+      visibility: hidden; opacity: 0; transform: translateY(-8px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
+    }
+    .menu-open .menu { visibility: visible; opacity: 1; transform: none; transition: opacity 0.25s ease, transform 0.25s ease; }
+    .menu-open { overflow: hidden; }
+    .menu__nav { list-style: none; border-top: 1px solid var(--border); }
+    .menu__nav li { border-bottom: 1px solid var(--border); }
+    .menu__nav a { padding: 16px 0; font-size: 1.45rem; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; }
+    .menu__nav a.active .n { color: var(--hl); }
+    .menu__foot { margin-top: auto; padding-top: 28px; display: grid; gap: 18px; }
+    .menu__foot .socials a { font-size: 0.82rem; padding: 6px 0; display: inline-block; }
+    .theme-toggle--bar .theme-toggle__label { display: none; }
+    .theme-toggle--bar { width: 44px; height: 44px; justify-content: center; }
   }
-  @media (max-width: 480px) {
-    .hero__actions { flex-direction: column; }
-    .hero__actions a { text-align: center; }
+
+  @media (max-width: 720px) {
+    body { font-size: 15.5px; }
+    .shell { width: min(100% - 32px, 720px); }
+    .topbar { padding: 0 16px; }
+    .menu { padding-left: 16px; padding-right: 16px; }
+    .hero { padding: 28px 0 56px; }
+    .hero__top { flex-direction: column-reverse; align-items: flex-start; gap: 1.5rem; }
+    .hero__portrait { width: 112px; height: 112px; }
+    .lede { margin-top: 1.4rem; }
+    .actions .btn { flex: 1 1 auto; justify-content: center; }
+    .section { padding: 3.5rem 0; }
+    .logos-block { padding-bottom: 3.5rem; }
+    .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .logos--3 { grid-template-columns: minmax(0, 1fr); }
+    .logos--3 .tile { flex-direction: row; align-items: center; gap: 14px; }
+    .logos--3 .tile__logo { width: 112px; height: 64px; margin: 0; padding: 8px 10px; flex-shrink: 0; }
+    .logos--3 .tile__text { flex: 1; min-width: 0; }
+    .tile__logo { height: 64px; padding: 10px 12px; }
+    .tile__logo img { max-height: 28px; }
+    .tile__logo img.wide { max-height: 30px; }
+    .now__list li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+    .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 6px; }
+    .strip a, .strip span.lg { height: 56px; }
+    .strip img { max-width: 84px; max-height: 24px; }
+    .cards { grid-template-columns: minmax(0, 1fr); }
+    .cards .panel { margin: 0.25rem 0 0.75rem; padding: 0.4rem 0 0.4rem 1rem; border-top: 0; border-left: 2px solid var(--border-strong); }
+    .panel ul { grid-template-columns: minmax(0, 1fr); }
+    .acc summary { grid-template-columns: 32px 1fr 20px; }
+    .acc .in { padding-left: 0; }
+    .edu { grid-template-columns: minmax(0, 1fr); }
+    .row { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+    .row--post { grid-template-columns: 48px minmax(0, 1fr); }
+  }
+
+  @media (max-width: 400px) { .clock--bar { display: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+    .js .section { opacity: 1; transform: none; }
   }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="pixel-bg" aria-hidden="true"></div>
 
-<div class="pixel-bg"></div>
-
-<div class="pixel-decor">
-  <div class="pixel-block pixel-block--1"></div>
-  <div class="pixel-block pixel-block--2"></div>
-  <div class="pixel-block pixel-block--3"></div>
-  <div class="pixel-block pixel-block--4"></div>
-  <div class="pixel-block pixel-block--5"></div>
-</div>
-
-<nav class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#hero" class="nav__logo">
-      <span class="nav__logo-pixel">
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-      </span>
-      Taran Rai
-    </a>
-    <div class="nav__right">
-      <ul class="nav__links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#passions">Passions</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="theme-toggle__icon" id="themeIcon">☾</span>
-        <span id="themeLabel">Light</span>
-      </button>
-      <button class="nav__toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
+<!-- Mobile and tablet: top bar with collapsing menu -->
+<header class="topbar" id="topbar">
+  <a href="#top" class="brand"><span class="pixel" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Taran Rai</a>
+  <div class="topbar__right">
+    <span class="clock clock--bar" aria-label="Local times in London and Vancouver"><span class="dot" aria-hidden="true"></span>LON <time data-clock="Europe/London" data-short>--:--</time><span class="clock__sep" aria-hidden="true">·</span>VAN <time data-clock="America/Vancouver" data-short>--:--</time></span>
+    <button class="theme-toggle theme-toggle--bar" type="button" data-theme-toggle aria-label="Switch colour theme"><span class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__label"></span></button>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="menu" id="menu" aria-label="Sections">
+  <ol class="menu__nav"><li><a href="#work"><span class="n">01</span>Work &amp; interests</a></li><li><a href="#about"><span class="n">02</span>About</a></li><li><a href="#research"><span class="n">03</span>Research</a></li><li><a href="#media"><span class="n">04</span>Media</a></li><li><a href="#writing"><span class="n">05</span>Model Takes</a></li><li><a href="#contact"><span class="n">06</span>Contact</a></li></ol>
+  <div class="menu__foot">
+    <div class="clocks">
+        <span class="clock"><span class="dot" aria-hidden="true"></span>London, UK <time data-clock="Europe/London">--:--</time></span>
+        <span class="clock"><span class="dot dot--alt" aria-hidden="true"></span>Vancouver, Canada <time data-clock="America/Vancouver">--:--</time></span>
+      </div>
+    <ul class="socials"><li><a href="https://www.linkedin.com/in/taranrai/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/taranrai" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://scholar.google.ca/citations?hl=en&amp;user=-sK0WvQAAAAJ" target="_blank" rel="noopener">Scholar</a></li><li><a href="https://www.modeltakes.com/" target="_blank" rel="noopener">Substack</a></li><li><a href="mailto:taranraiml@gmail.com">Email</a></li></ul>
   </div>
 </nav>
 
-<div class="content">
+<div class="shell" id="top">
+  <!-- Desktop: sticky sidebar -->
+  <aside class="side">
+    <a href="#top" class="brand"><span class="pixel" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Taran Rai</a>
+    <p class="side__role">AI/ML engineer and researcher.<br>Founder of LiverSWAT.</p>
+    <nav aria-label="Sections"><ol class="index"><li><a href="#work"><span class="n">01</span>Work &amp; interests</a></li><li><a href="#about"><span class="n">02</span>About</a></li><li><a href="#research"><span class="n">03</span>Research</a></li><li><a href="#media"><span class="n">04</span>Media</a></li><li><a href="#writing"><span class="n">05</span>Model Takes</a></li><li><a href="#contact"><span class="n">06</span>Contact</a></li></ol></nav>
+    <div class="side__foot">
+      <div class="clocks">
+        <span class="clock"><span class="dot" aria-hidden="true"></span>London, UK <time data-clock="Europe/London">--:--</time></span>
+        <span class="clock"><span class="dot dot--alt" aria-hidden="true"></span>Vancouver, Canada <time data-clock="America/Vancouver">--:--</time></span>
+      </div>
+      <ul class="socials"><li><a href="https://www.linkedin.com/in/taranrai/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/taranrai" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://scholar.google.ca/citations?hl=en&amp;user=-sK0WvQAAAAJ" target="_blank" rel="noopener">Scholar</a></li><li><a href="https://www.modeltakes.com/" target="_blank" rel="noopener">Substack</a></li><li><a href="mailto:taranraiml@gmail.com">Email</a></li></ul>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">
+  <span class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__label"></span>
+</button>
+    </div>
+  </aside>
 
-  <section class="hero" id="hero">
-    <div class="hero__top">
-      <div class="hero__text">
-        <div class="hero__tag">AI / ML Engineer & Researcher</div>
-        <h1 class="hero__name">Taran Rai</h1>
-        <p class="hero__subtitle">AI/ML engineer working across computer vision, deep learning, LLMs, and applied AI. I build, research, and ship things that work in the real world.</p>
-        <div class="hero__actions">
-          <a href="#publications" class="btn--primary">View Research</a>
-          <a href="#contact" class="btn--ghost">Get in Touch</a>
+  <main class="main" id="main">
+    <section class="hero" id="hero" aria-labelledby="name">
+      <div class="hero__top">
+        <div>
+          <div class="hero__tag">AI / ML Engineer &amp; Researcher</div>
+          <h1 class="hero__name" id="name">Taran Rai</h1>
         </div>
+        <div class="hero__portrait"><img src="assets/images/home/lecture.jpg" alt="Taran Rai" width="168" height="168" fetchpriority="high"></div>
       </div>
-      <div class="hero__portrait">
-        <img src="assets/images/home/lecture.png" alt="Taran Rai">
+      <p class="lede">My background is in applied AI and machine learning, with much of my work spanning animal and human health.</p>
+      <div class="prose">
+        <p class="body">Through the University of Surrey I've worked with Zoetis, Mars Petcare and startups in the <a href="https://vhive.buzz/animal-health-incubator/" target="_blank" rel="noopener">vHive Animal Health Incubator</a>. Today my focus is applied AI research, AI safety and evaluation, and open-source models. I also founded <a href="https://www.liverswat.org/" target="_blank" rel="noopener">LiverSWAT</a>, a national liver health campaign.</p>
       </div>
-    </div>
-    <div class="scroll-hint">
-      <div class="scroll-hint__bar"></div>
-      <span class="scroll-hint__text">Scroll</span>
-    </div>
-  </section>
+      <div class="actions">
+        <a href="#research" class="btn btn--primary">View research</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </section>
 
-  <hr class="warm-bar">
 
-  <section class="section" id="about">
-    <div class="section__label">About</div>
-    <h2 class="section__heading">What I do</h2>
-    <div class="section__text">
-      <p>I do AI/ML engineering and data science things. My work spans computer vision, deep learning, LLMs, and applied AI/ML. I build and validate algorithms for real-world deployment, and I stay close to the cutting edge of what's happening in AI.</p>
-      <p>A lot of my research has been in computational pathology and the health domains (both animal and human), but I've also worked across social media listening with pharma companies, wearable tech and sensor-based systems through the <a class="link" href="https://vhive.buzz/animal-health-incubator/" target="_blank">vHive Animal Health Incubator</a>, and I'm interested in the human-technology interaction side of AI. My experience spans niche startups through to larger multinational organisations.</p>
-      <p>I guest lecture for <a class="link" href="https://catalogue.surrey.ac.uk/2023-4/module/EEEM005" target="_blank">AI and AI Programming</a> at the University of Surrey, introducing neural networks.</p>
-      <p>I hold a PhD in AI/ML for digital pathology (deep learning + computer vision for grading in canine sarcoma biopsy images), an MSc in Data Science from City, University of London, and a BA (Dual Hons) in Economics and Finance from Keele University.</p>
-    </div>
-  </section>
 
-  <section class="section" id="passions">
-    <div class="section__label">Passions</div>
-    <h2 class="section__heading">Some of my passions</h2>
-    <div class="section__text"><p>My interests are shaped by personal experiences. I choose to work on projects that genuinely matter to me.</p></div>
-    <div class="passions-grid">
-      <div class="passion-card">
-        <div class="passion-card__icon">🔬</div>
-        <h3 class="passion-card__title">Computational Pathology</h3>
-        <p class="passion-card__desc">Applying and developing AI/ML models for animal and human health. Most of <a href="https://scholar.google.com/citations?user=-sK0WvQAAAAJ&hl=en&oi=ao" target="_blank">my research</a> lives here.</p>
-      </div>
-      <div class="passion-card">
-        <div class="passion-card__icon">🌾</div>
-        <h3 class="passion-card__title">Farming & Nature</h3>
-        <p class="passion-card__desc">Protecting and providing for future generations. Farming, planting lots of trees, and nurturing the land.</p>
-      </div>
-      <div class="passion-card">
-        <div class="passion-card__icon">💸</div>
-        <h3 class="passion-card__title">Investment Accessibility</h3>
-        <p class="passion-card__desc">Collaborating with investment managers from boutique investment banks to make investing easier to understand and more accessible. Watch this space.</p>
-      </div>
-      <div class="passion-card">
-        <div class="passion-card__icon"><img src="https://assets.cdn.filesafe.space/tzIyCjwkcG52gxhgsUns/media/6905f69d29ca957deb2106a2.png" alt="LiverSWAT" class="passion-card__logo"></div>
-        <h3 class="passion-card__title">The LiverSWAT Project</h3>
-        <p class="passion-card__desc">After losing my father to liver cancer in 2024, we created <a href="https://liverswat.org" target="_blank">LiverSWAT</a> at NishkamSWAT, fundraising for FibroScan liver screening roadshows across the UK.</p>
-      </div>
-    </div>
-  </section>
+    <section class="logos-block" aria-labelledby="collab-h">
+      <div class="sec-h"><div class="section__label" id="collab-h">Organisations I've worked with</div><span class="sec-h__count">05</span></div>
+      <ul class="strip"><li><a href="https://www.zoetis.co.uk/" target="_blank" rel="noopener" title="Zoetis · Through the University of Surrey"><img class="" src="assets/images/logos/zoetis.svg" alt="Zoetis" loading="lazy"></a></li><li><a href="https://www.mars.com/our-brands/petcare" target="_blank" rel="noopener" title="Mars Petcare · Through the University of Surrey"><img class="" src="assets/images/logos/mars.svg" alt="Mars Petcare" loading="lazy"></a></li><li><span class="lg" title="Aviasenze · AI research for acoustic poultry health monitoring"><span class="wm">Aviasenze</span></span></li><li><a href="https://www.surrey.ac.uk/" target="_blank" rel="noopener" title="University of Surrey · PhD and research"><img class="wide" src="assets/images/logos/surrey.svg" alt="University of Surrey" loading="lazy"></a></li><li><a href="https://vhive.buzz/animal-health-incubator/" target="_blank" rel="noopener" title="vHive · Animal Health Incubator"><img class="" src="assets/images/logos/vhive.png" alt="vHive" loading="lazy"></a></li></ul>
+      <p class="fine">Through the University of Surrey, its vHive Animal Health Incubator, or directly.</p>
+    </section>
 
-  <section class="section" id="publications">
-    <div class="section__label">Publications</div>
-    <h2 class="section__heading">Selected Publications</h2>
-    <div class="section__text"><p>Full list available on <a class="link" href="https://scholar.google.ca/citations?hl=en&user=-sK0WvQAAAAJ" target="_blank">Google Scholar</a>.</p></div>
-    <div class="pub-list">
-      <div class="pub-item">
-        <span class="pub-year">2026</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/vde.70040" target="_blank">VETCOP: A New Tool for Understanding Pet Owner Topical Steroid Treatment Phobias in the Treatment of Canine Atopic Dermatitis: A Study From China and Singapore</a></div>
-          <div class="pub-info__journal">Veterinary Dermatology</div>
-          <div class="pub-info__authors">Hock S H, Zhang D, Wang F, Chen X, Ye J J, Tang X, Cui Q, Quan X, Li S, Rai T, Wells K.</div>
-        </div>
+    <section class="section" id="work">
+      <div class="sec-h"><div class="section__label"><span class="n">01</span> Work &amp; interests</div><span class="sec-h__count" id="counter" aria-live="polite">01 / 04</span></div>
+      <h2 class="section__heading">What I work on</h2>
+      <div class="cards" role="tablist" aria-label="Work and interests">
+        <button class="card" type="button" role="tab" id="t1" aria-selected="true" aria-controls="p1" tabindex="0"><span class="card__n">01</span><span class="card__body"><span class="card__t">Applied AI &amp; Startups</span><span class="card__d">Real problems, practical models.</span></span></button>
+        <button class="card" type="button" role="tab" id="t2" aria-selected="false" aria-controls="p2" tabindex="-1"><span class="card__n">02</span><span class="card__body"><span class="card__t">AI Safety &amp; Reliability</span><span class="card__d">When to trust the model.</span></span></button>
+        <button class="card" type="button" role="tab" id="t3" aria-selected="false" aria-controls="p3" tabindex="-1"><span class="card__n">03</span><span class="card__body"><span class="card__t">Open-Source AI</span><span class="card__d">Who gets to build.</span></span></button>
+        <button class="card" type="button" role="tab" id="t4" aria-selected="false" aria-controls="p4" tabindex="-1"><span class="card__n">04</span><span class="card__body"><span class="card__t">LiverSWAT</span><span class="card__d">Liver health, closer to home.</span></span></button>
       </div>
-      <div class="pub-item">
-        <span class="pub-year">2026</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://link.springer.com/article/10.1007/s10278-025-01820-z" target="_blank">IPATH: A Large-Scale Pathology Image-Text Dataset from Instagram for Vision-Language Model Training</a></div>
-          <div class="pub-info__journal">Journal of Imaging Informatics in Medicine, 1-24</div>
-          <div class="pub-info__authors">Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K</div>
-        </div>
+      <div class="panel prose" id="p1" role="tabpanel" aria-labelledby="t1"><p>Projects through the University of Surrey and vHive, from first scoping to a working model:</p>
+            <ul>
+              <li>Computer vision for animal detection and behaviour from CCTV</li>
+              <li>Acoustic disease detection in poultry</li>
+              <li>RAG and LLM applications, including topic modelling and social media listening</li>
+              <li>Agentic workflows and LLM-assisted annotation</li>
+              <li>LLM evaluation, model validation and benchmarking</li>
+              <li>Computational pathology</li>
+            </ul>
+</div>
+      <div class="panel prose" id="p2" role="tabpanel" aria-labelledby="t2" hidden><p>When should a model decide, and when should a person? In pathology that meant <a href="https://doi.org/10.3390/cancers16030644" target="_blank" rel="noopener">keeping pathologists in the loop</a> with adaptive thresholds. It has since meant uncertainty, evaluation, checking LLM outputs and <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12933/129331A/Evaluating-diffusion-model-generated-synthetic-histopathology-image-data-against-authentic/10.1117/12.3006285.short" target="_blank" rel="noopener">testing synthetic medical images</a> against real ones.</p>
+            <p>I now work on research initiatives in AI safety, reliability and evaluation, and spoke on the risks and opportunities at BVA Live's <em>Beyond ChatGPT</em> panel in 2023.</p>
+</div>
+      <div class="panel prose" id="p3" role="tabpanel" aria-labelledby="t3" hidden><p>One of my first papers asked whether openly available ImageNet features could work on small histopathology datasets. Open models are now far more capable, and I think they matter well beyond research.</p>
+            <p>For many industries and enterprises, models you can run on your own infrastructure keep sensitive data in-house, can be inspected and tested, and avoid lock-in to a single provider. Open-source, open-weight and proprietary models each have different trade-offs, and choosing well starts with being clear about which is which.</p>
+</div>
+      <div class="panel prose" id="p4" role="tabpanel" aria-labelledby="t4" hidden><p>I founded LiverSWAT after losing my father to liver cancer in 2024. It's a national healthcare campaign under NishkamSWAT for liver disease awareness and prevention, bringing free NHS-delivered FibroScans to underserved communities through events in places of worship and community centres.</p>
+            <p>We're building an open-source liver health benchmark for AI evaluation with ML researchers, and received an ElevenLabs Impact Program grant to make liver health information available in Panjabi, Hindi and Urdu through AI voice and translation.</p>
+            <div class="badges">
+              <a href="https://www.liverswat.org/" target="_blank" rel="noopener" aria-label="LiverSWAT"><img class="liver" src="assets/images/logos/liverswat.png" alt="LiverSWAT" loading="lazy"></a>
+              <a href="https://nishkamswat.org" target="_blank" rel="noopener" aria-label="NishkamSWAT"><img src="assets/images/logos/nishkamswat.jpg" alt="NishkamSWAT" loading="lazy"></a>
+              <a href="https://elevenlabs.io/impact-program" target="_blank" rel="noopener" aria-label="ElevenLabs Impact Program"><img class="eleven" src="assets/images/logos/elevenlabs.svg" alt="ElevenLabs Impact Program" loading="lazy"></a>
+            </div>
+            
+          </div>
+      <h3 class="subhead">Visiting Researcher</h3>
+      <div class="vr">
+        <p class="vr__lead"><b>Centre for Vision, Speech and Signal Processing (CVSSP), University of Surrey.</b> Applied AI/ML research across human and animal health, including:</p>
+        <ul class="now__list">
+          <li><b>Aviasenze</b><span>AI research for acoustic monitoring of poultry health.</span></li>
+          <li><b>AI safety</b><span>Research on AI safety, reliability and evaluation.</span></li>
+          <li><b>LiverSWAT</b><span>Developing an open-source liver health benchmark for AI evaluation.</span></li>
+          <li><b>Marwell Wildlife</b><span>Research support for the ongoing Marwell Zoo project.</span></li>
+        </ul>
       </div>
-      <div class="pub-item">
-        <span class="pub-year">2026</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.cureusjournals.com/articles/6968-comparative-analysis-of-generative-and-diffusion-models-for-mitosis-synthesis-in-histopathology-images" target="_blank">Comparative Analysis of Generative and Diffusion Models for Mitosis Synthesis in Histopathology Images</a></div>
-          <div class="pub-info__journal">Cureus Journal of Computer Science, 3(1)</div>
-          <div class="pub-info__authors">Alkhadra RB, Diaz-Santana P, Rai T, Wells K</div>
-        </div>
-      </div>
-       <div class="pub-item">
-        <span class="pub-year">2025</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://ieeexplore.ieee.org/abstract/document/11287912" target="_blank">Dual Representation Learning in CNNs: Generalised Glycolytic Patterns and Organ-specific Activations</a></div>
-          <div class="pub-info__journal">2025 IEEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD)</div>
-          <div class="pub-info__authors">John R R, Rai T, Smith R, Robinson A, Prakash V, Shastry M, Strouhal P, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2025</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13413/1341319/The-IPATH-dataset--training-CLIP-models-with-histopathology-based/10.1117/12.3051527.short" target="_blank">The IPATH dataset: training CLIP models with histopathology-based image-caption pairs from Instagram</a></div>
-          <div class="pub-info__journal">SPIE Medical Imaging 2025</div>
-          <div class="pub-info__authors">Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2025</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/134111A/Echo-chamber--uncovering-the-public-views-on-ultrasounds-via/10.1117/12.3047380.short" target="_blank">Echo chamber: uncovering the public views on ultrasounds via advanced social media listening</a></div>
-          <div class="pub-info__journal">SPIE Medical Imaging 2025</div>
-          <div class="pub-info__authors">Rai T, Tarrant G, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2024</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12933/129331A/Evaluating-diffusion-model-generated-synthetic-histopathology-image-data-against-authentic/10.1117/12.3006285.short" target="_blank">Evaluating diffusion model generated synthetic histopathology image data against authentic digital pathology images</a></div>
-          <div class="pub-info__journal">SPIE Medical Imaging 2024</div>
-          <div class="pub-info__authors">Rai T, Gola C, Hernández M, Fingerhood S, Marrero J, Diaz-Santana P, Giglia G, Morisi A, Bacci B, Thomas SA, Ressel L, Bacon N, Papachristou N, Cook A, La Ragione R, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2024</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://doi.org/10.3390/cancers16030644" target="_blank">Keeping Pathologists in the Loop and an Adaptive F1-Score Threshold Method for Mitosis Detection in Canine Perivascular Wall Tumours</a></div>
-          <div class="pub-info__journal">Cancers, 16(3), 644</div>
-          <div class="pub-info__authors">Rai T, Morisi A, Bacci B, Bacon NJ, Dark MJ, Aboellail T, Thomas SA, La Ragione RM, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3761" target="_blank">The Terminator and veterinary medicine: can they meet outside the world of sci-fi?</a></div>
-          <div class="pub-info__journal">Vet Record</div>
-          <div class="pub-info__authors">Rai T</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <div class="pub-info">
-          <div class="pub-info__title">Deep Learning for Necrosis and Mitosis Detection in Canine Soft Tissue Sarcoma Whole Slide Images</div>
-          <div class="pub-info__journal">PhD Thesis, University of Surrey</div>
-          <div class="pub-info__authors">Rai T</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0749208123000700" target="_blank">Digital Transformation of Cancer Care in the Era of Big Data, Artificial Intelligence and Data-Driven Interventions: Navigating the Field</a></div>
-          <div class="pub-info__journal">Seminars in Oncology Nursing</div>
-          <div class="pub-info__authors">Papachristou N, Kotronoulos G, Dikaios N, Allison SJ, Eleftherochorinou H, Rai T, Kunz H, Barnaghi P, Miaskowski C, Bamidis PD</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://doi.org/10.3390/vetsci10010045" target="_blank">Detection of Necrosis in Digitised Whole-Slide Images for Better Grading of Canine Soft-Tissue Sarcomas Using Machine-Learning</a></div>
-          <div class="pub-info__journal">Veterinary Sciences, 10(1), 45</div>
-          <div class="pub-info__authors">Morisi A, Rai T, Bacon NJ, Thomas SA, Bober M, Wells K, Dark MJ, Aboellail T, Bacci B, La Ragione RM</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2023</span>
-        <div class="pub-info">
-          <div class="pub-info__title">Investigating the Potential of Untrained Convolutional Layers and Pruning in Computational Pathology</div>
-          <div class="pub-info__journal">Medical Imaging 2023: Digital and Computational Pathology, SPIE, Vol. 12471</div>
-          <div class="pub-info__authors">Rai T, Papanikolaou I, Dave N, Morisi A, Bacci B, Thomas S, La Ragione R, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2022</span>
-        <div class="pub-info">
-          <div class="pub-info__title"><a href="https://www.nature.com/articles/s41598-022-13928-1" target="_blank">Deep Learning for Necrosis Detection Using Canine Perivascular Wall Tumour Whole Slide Images</a></div>
-          <div class="pub-info__journal">Scientific Reports, 12, 10634</div>
-          <div class="pub-info__authors">Rai T, Morisi A, Bacci B, Bacon NJ, Dark MJ, Aboellail T, Thomas SA, Bober M, La Ragione R, Wells K</div>
-        </div>
-      </div>
-      <div class="pub-item">
-        <span class="pub-year">2019</span>
-        <div class="pub-info">
-          <div class="pub-info__title">Can ImageNet Feature Maps Be Applied to Small Histopathological Datasets for the Classification of Breast Cancer Metastatic Tissue in Whole Slide Images?</div>
-          <div class="pub-info__journal">Proc. SPIE, 10956, 109560V</div>
-          <div class="pub-info__authors">Rai T, Morisi A, Bacci B, Bacon NJ, Thomas S, La Ragione R, Bober M, Wells K</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="media">
-    <div class="section__label">Media</div>
-    <h2 class="section__heading">Talks & Appearances</h2>
-    <div class="media-list">
-      <div class="media-item">
-        <span class="media-date">24 Aug 2026</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.bbc.co.uk/news/articles/cdewej4zyrno" target="_blank">Hundreds turn out for community sport event</a></div>
-          <div class="media-info__source">BBC News</div>
-          <div class="media-info__author">Neranjana Elapatha</div>
-        </div>
+    <section class="section" id="about">
+      <div class="section__label"><span class="n">02</span> About</div>
+      <h2 class="section__heading">Background</h2>
+      <div class="prose">
+        <p>My PhD at the University of Surrey used deep learning and computer vision to detect necrosis and mitosis in canine soft-tissue sarcoma biopsies, key steps in grading these tumours. I then worked as a data scientist and AI/ML engineer in Surrey's Centre for Vision, Speech and Signal Processing (CVSSP) on computer vision, audio classification and LLM applications such as RAG, topic modelling and social media listening, through industry partners and vHive startups.</p>
+        <p>I've guest lectured on neural networks for Surrey's <a href="https://catalogue.surrey.ac.uk/2023-4/module/EEEM005" target="_blank" rel="noopener">AI and AI Programming</a> module, and I'm a <a href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener">trustee of Alcohol Change UK</a>, the national charity working to reduce alcohol-related harm, especially for vulnerable people.</p>
       </div>
-      <div class="media-item">
-        <span class="media-date">08 Jul 2026</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://lnkd.in/p/guJNxnDa" target="_blank">Take care of your liver lecture</a></div>
-          <div class="media-info__source">Sri Guru Nanak Darbar Gurdwara</div>
-          <div class="media-info__author">Bhupinder Sandhu on LinkedIn</div>
-        </div>
+      <div class="edu">
+        <div><b>PhD</b>AI/ML in digital pathology, University of Surrey (CVSSP)</div>
+        <div><b>MSc</b>Data Science, City, University of London</div>
+        <div><b>BA (Dual Hons)</b>Economics and Finance, Keele University</div>
       </div>
-      <div class="media-item">
-        <span class="media-date">22 Jun 2026</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.instagram.com/liverswat/reel/DaBUDD2h2Rv/" target="_blank">BBC Radio Berkshire with Rena Dipti Annobil</a></div>
-          <div class="media-info__source">BBC Radio Berkshire</div>
-          <div class="media-info__author">Taran Rai, Randeep S Lall and Rena Dipti Annobil</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">29 Sep 2025</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.facebook.com/nishkamSWAT/posts/a-landmark-initiative-for-liver-health-join-us-on-bbc-radio-london-%EF%B8%8F-live-this-e/1128134122754064/" target="_blank">BBC Radio London with Bobby Friction</a></div>
-          <div class="media-info__source">BBC Radio London</div>
-          <div class="media-info__author">Taran Rai, Randeep S Lall and Bobby Friction</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">18 Mar 2025</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.nishkamswat.com/articles/raising-awareness-for-early-liver-disease-detection" target="_blank">Raising Awareness for Early Liver Disease Detection</a></div>
-          <div class="media-info__source">NishkamSWAT Blog</div>
-          <div class="media-info__author">Taran Rai</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">25 Feb 2025</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://blogs.city.ac.uk/city-alumni/2025/02/25/taran-rai-honouring-his-father-by-raising-awareness/" target="_blank">Taran Rai: Honouring his father by raising awareness</a></div>
-          <div class="media-info__source">City St George's Alumni Network</div>
-          <div class="media-info__author">Madicken Malm</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">01 Dec 2023</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3761" target="_blank">The Terminator and veterinary medicine: can they meet outside the world of sci-fi?</a></div>
-          <div class="media-info__source">Vet Record</div>
-          <div class="media-info__author">Taran Rai</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">21 Jul 2023</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/abs/10.1002/vetr.3276" target="_blank">Are AI-written articles the future?</a></div>
-          <div class="media-info__source">Vet Record</div>
-          <div class="media-info__author">Georgina Mills</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">16 May 2023</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.vettimes.co.uk/news/engage-sceptically-with-ai-debate-bva-live-delegates-told/" target="_blank">Engage 'sceptically' with AI debate, BVA Live delegates told</a></div>
-          <div class="media-info__source">Vet Times</div>
-          <div class="media-info__author">Allister Webb</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">11 May 2023</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://x.com/BritishVets/status/1656679495925891072" target="_blank">'Beyond ChatGPT' session on harnessing AI in veterinary medicine at #BVALive</a></div>
-          <div class="media-info__source">@BritishVets, X (Twitter)</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">05 May 2023</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.bva.co.uk/news-and-blog/news-article/role-of-artificial-intelligence-in-vet-medicine-to-be-explored-at-bva-live/" target="_blank">Role of Artificial Intelligence in vet medicine to be explored at BVA Live</a></div>
-          <div class="media-info__source">British Veterinary Association (BVA)</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">07 Dec 2022</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.surrey.ac.uk/events/20221207-artificial-intelligence-necrosis-and-mitosis-detection" target="_blank">Artificial Intelligence for Necrosis and Mitosis Detection</a></div>
-          <div class="media-info__source">University of Surrey, Events</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">09 Sep 2019</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://www.zoetis.co.uk/news-and-media/advancing-the-veterinary-profession---supporting-students.aspx" target="_blank">Advancing the Veterinary Profession: Supporting Students</a></div>
-          <div class="media-info__source">Zoetis UK Ltd. Press Office</div>
-        </div>
-      </div>
-      <div class="media-item">
-        <span class="media-date">22 May 2019</span>
-        <div class="media-info">
-          <div class="media-info__title"><a href="https://onehealthejp.eu/outcomes/workshops/satellite-workshop-2019" target="_blank">ASM Satellite Workshop 2019: Digital Innovation and Data Management</a></div>
-          <div class="media-info__source">ASM Satellite Workshop 2019</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <h3 class="subhead">Charities &amp; community</h3>
+      <ul class="logos logos--3"><li><a class="tile" href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener"><span class="tile__logo"><img class="tall" src="assets/images/logos/alcoholchange.svg" alt="Alcohol Change UK" loading="lazy"></span><span class="tile__text"><span class="tile__name">Alcohol Change UK</span><span class="tile__cap">Trustee</span></span></a></li><li><a class="tile" href="https://www.liverswat.org/" target="_blank" rel="noopener"><span class="tile__logo"><img class="liver" src="assets/images/logos/liverswat.png" alt="LiverSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">LiverSWAT</span><span class="tile__cap">Founder · national liver health campaign</span></span></a></li><li><a class="tile" href="https://nishkamswat.org" target="_blank" rel="noopener"><span class="tile__logo"><img class="photo" src="assets/images/logos/nishkamswat.jpg" alt="NishkamSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">NishkamSWAT</span><span class="tile__cap">LiverSWAT is a NishkamSWAT initiative</span></span></a></li></ul>
+    </section>
 
-  <section class="section" id="blog">
-    <div class="section__label">Blog</div>
-    <h2 class="section__heading">Model Takes</h2>
-    <div class="section__text"><p>My takes on AI/ML and technology. Sometimes other things I find interesting.</p></div>
-    <div class="blog-grid" id="blogGrid">
-      <div class="blog-loading">Loading posts...</div>
-    </div>
-    <div class="blog-cta">
-      <a href="https://www.modeltakes.com/" target="_blank">Read all posts on Substack &rarr;</a>
-    </div>
-    <div class="blog-subscribe">
-      <iframe src="https://www.modeltakes.com/embed" width="100%" height="150" style="border:none; background:transparent;" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </section>
+    <section class="section" id="research">
+      <div class="section__label"><span class="n">03</span> Research</div>
+      <h2 class="section__heading">Selected publications</h2>
+      <ul class="rows"><li class="row"><span class="row__y">2024</span><div><h3 class="row__t"><a href="https://doi.org/10.3390/cancers16030644" target="_blank" rel="noopener">Keeping Pathologists in the Loop and an Adaptive F1-Score Threshold Method for Mitosis Detection in Canine Perivascular Wall Tumours</a></h3><p class="row__m"><em>Cancers 16(3), 644</em> <span class="chip">Human-in-the-loop</span></p><p class="row__a">Rai T, Morisi A, Bacci B, Bacon NJ, Dark MJ, Aboellail T, Thomas SA, La Ragione RM, Wells K</p></div></li><li class="row"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://link.springer.com/article/10.1007/s10278-025-01820-z" target="_blank" rel="noopener">IPATH: A Large-Scale Pathology Image-Text Dataset from Instagram for Vision-Language Model Training</a></h3><p class="row__m"><em>Journal of Imaging Informatics in Medicine, 1-24</em> <span class="chip">Vision-language</span></p><p class="row__a">Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K</p></div></li><li class="row"><span class="row__y">2024</span><div><h3 class="row__t"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12933/129331A/Evaluating-diffusion-model-generated-synthetic-histopathology-image-data-against-authentic/10.1117/12.3006285.short" target="_blank" rel="noopener">Evaluating diffusion model generated synthetic histopathology image data against authentic digital pathology images</a></h3><p class="row__m"><em>SPIE Medical Imaging 2024</em> <span class="chip">Evaluation</span></p><p class="row__a">Rai T, Gola C, Hernández M, Fingerhood S, Marrero J, Diaz-Santana P, Giglia G, Morisi A, Bacci B, Thomas SA, Ressel L, Bacon N, Papachristou N, Cook A, La Ragione R, Wells K</p></div></li><li class="row"><span class="row__y">2025</span><div><h3 class="row__t"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/134111A/Echo-chamber--uncovering-the-public-views-on-ultrasounds-via/10.1117/12.3047380.short" target="_blank" rel="noopener">Echo chamber: uncovering the public views on ultrasounds via advanced social media listening</a></h3><p class="row__m"><em>SPIE Medical Imaging 2025</em> <span class="chip">LLMs</span></p><p class="row__a">Rai T, Tarrant G, Wells K</p></div></li><li class="row"><span class="row__y">2022</span><div><h3 class="row__t"><a href="https://www.nature.com/articles/s41598-022-13928-1" target="_blank" rel="noopener">Deep Learning for Necrosis Detection Using Canine Perivascular Wall Tumour Whole Slide Images</a></h3><p class="row__m"><em>Scientific Reports 12, 10634</em> <span class="chip">Computational pathology</span></p><p class="row__a">Rai T, Morisi A, Bacci B, Bacon NJ, Dark MJ, Aboellail T, Thomas SA, Bober M, La Ragione R, Wells K</p></div></li></ul>
+      <ul class="rows" id="pubs-more" hidden><li class="row"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/vde.70040" target="_blank" rel="noopener">VETCOP: A New Tool for Understanding Pet Owner Topical Steroid Treatment Phobias in the Treatment of Canine Atopic Dermatitis: A Study From China and Singapore</a></h3><p class="row__m"><em>Veterinary Dermatology</em></p><p class="row__a">Hock S H, Zhang D, Wang F, Chen X, Ye J J, Tang X, Cui Q, Quan X, Li S, Rai T, Wells K</p></div></li><li class="row"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://www.cureusjournals.com/articles/6968-comparative-analysis-of-generative-and-diffusion-models-for-mitosis-synthesis-in-histopathology-images" target="_blank" rel="noopener">Comparative Analysis of Generative and Diffusion Models for Mitosis Synthesis in Histopathology Images</a></h3><p class="row__m"><em>Cureus Journal of Computer Science 3(1)</em></p><p class="row__a">Alkhadra RB, Diaz-Santana P, Rai T, Wells K</p></div></li><li class="row"><span class="row__y">2025</span><div><h3 class="row__t"><a href="https://ieeexplore.ieee.org/abstract/document/11287912" target="_blank" rel="noopener">Dual Representation Learning in CNNs: Generalised Glycolytic Patterns and Organ-specific Activations</a></h3><p class="row__m"><em>IEEE NSS / MIC / RTSD 2025</em></p><p class="row__a">John R R, Rai T, Smith R, Robinson A, Prakash V, Shastry M, Strouhal P, Wells K</p></div></li><li class="row"><span class="row__y">2025</span><div><h3 class="row__t"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13413/1341319/The-IPATH-dataset--training-CLIP-models-with-histopathology-based/10.1117/12.3051527.short" target="_blank" rel="noopener">The IPATH dataset: training CLIP models with histopathology-based image-caption pairs from Instagram</a></h3><p class="row__m"><em>SPIE Medical Imaging 2025</em></p><p class="row__a">Mirhosseini S, Rai T, Diaz-Santana P, La Ragione R, Bacon N, Wells K</p></div></li><li class="row"><span class="row__y">2023</span><div><h3 class="row__t"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3761" target="_blank" rel="noopener">The Terminator and veterinary medicine: can they meet outside the world of sci-fi?</a></h3><p class="row__m"><em>Vet Record</em></p><p class="row__a">Rai T</p></div></li><li class="row"><span class="row__y">2023</span><div><h3 class="row__t">Deep Learning for Necrosis and Mitosis Detection in Canine Soft Tissue Sarcoma Whole Slide Images</h3><p class="row__m"><em>PhD Thesis, University of Surrey</em></p><p class="row__a">Rai T</p></div></li><li class="row"><span class="row__y">2023</span><div><h3 class="row__t"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0749208123000700" target="_blank" rel="noopener">Digital Transformation of Cancer Care in the Era of Big Data, Artificial Intelligence and Data-Driven Interventions: Navigating the Field</a></h3><p class="row__m"><em>Seminars in Oncology Nursing</em></p><p class="row__a">Papachristou N, Kotronoulos G, Dikaios N, Allison SJ, Eleftherochorinou H, Rai T, Kunz H, Barnaghi P, Miaskowski C, Bamidis PD</p></div></li><li class="row"><span class="row__y">2023</span><div><h3 class="row__t"><a href="https://doi.org/10.3390/vetsci10010045" target="_blank" rel="noopener">Detection of Necrosis in Digitised Whole-Slide Images for Better Grading of Canine Soft-Tissue Sarcomas Using Machine-Learning</a></h3><p class="row__m"><em>Veterinary Sciences 10(1), 45</em></p><p class="row__a">Morisi A, Rai T, Bacon NJ, Thomas SA, Bober M, Wells K, Dark MJ, Aboellail T, Bacci B, La Ragione RM</p></div></li><li class="row"><span class="row__y">2023</span><div><h3 class="row__t">Investigating the Potential of Untrained Convolutional Layers and Pruning in Computational Pathology</h3><p class="row__m"><em>SPIE Medical Imaging 2023: Digital and Computational Pathology, Vol. 12471</em></p><p class="row__a">Rai T, Papanikolaou I, Dave N, Morisi A, Bacci B, Thomas S, La Ragione R, Wells K</p></div></li><li class="row"><span class="row__y">2019</span><div><h3 class="row__t">Can ImageNet Feature Maps Be Applied to Small Histopathological Datasets for the Classification of Breast Cancer Metastatic Tissue in Whole Slide Images?</h3><p class="row__m"><em>Proc. SPIE 10956, 109560V</em></p><p class="row__a">Rai T, Morisi A, Bacci B, Bacon NJ, Thomas S, La Ragione R, Bober M, Wells K</p></div></li></ul>
+      <div class="more-bar">
+        <button class="more" type="button" aria-expanded="false" aria-controls="pubs-more" data-more="All publications|Fewer publications">All publications</button>
+        <a class="ext" href="https://scholar.google.ca/citations?hl=en&amp;user=-sK0WvQAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+      </div>
+    </section>
 
-  <section class="section" id="contact">
-    <div class="section__label">Contact</div>
-    <h2 class="section__heading">Get in touch</h2>
-    <div class="section__text"><p>Open to interesting work, collaborations, and conversations.</p></div>
-    <div class="contact-grid">
+    <section class="section" id="media">
+      <div class="section__label"><span class="n">04</span> Media</div>
+      <h2 class="section__heading">Talks &amp; appearances</h2>
+      <ul class="strip strip--media" aria-label="Featured in"><li><a href="https://www.bbc.co.uk/" target="_blank" rel="noopener" title="BBC · BBC Radio Berkshire, BBC Radio London"><img class="" src="assets/images/logos/bbc.svg" alt="BBC" loading="lazy"></a></li><li><a href="https://www.vettimes.com/" target="_blank" rel="noopener" title="Vet Times · Media coverage"><img class="" src="assets/images/logos/vettimes.svg" alt="Vet Times" loading="lazy"></a></li><li><a href="https://www.bva.co.uk/" target="_blank" rel="noopener" title="BVA · British Veterinary Association, BVA Live"><img class="mark" src="assets/images/logos/bva.svg" alt="BVA" loading="lazy"></a></li><li><a href="https://www.citystgeorges.ac.uk/" target="_blank" rel="noopener" title="City St George&#x27;s · City St George&#x27;s, University of London alumni feature"><img class="mark" src="assets/images/logos/citystgeorges.png" alt="City St George&#x27;s" loading="lazy"></a></li><li><span class="lg" title="Vet Record · Authored article and coverage"><span class="wm">Vet Record</span></span></li></ul>
+      <ul class="rows"><li class="row"><span class="row__y">Jun 2026</span><div><h3 class="row__t"><a href="https://www.instagram.com/liverswat/reel/DaBUDD2h2Rv/" target="_blank" rel="noopener">Liver health and LiverSWAT, with Rena Dipti Annobil</a></h3><p class="row__m"><span class="chip">Radio interview</span> BBC Radio Berkshire</p></div></li><li class="row"><span class="row__y">Sep 2025</span><div><h3 class="row__t"><a href="https://www.facebook.com/nishkamSWAT/posts/a-landmark-initiative-for-liver-health-join-us-on-bbc-radio-london-%EF%B8%8F-live-this-e/1128134122754064/" target="_blank" rel="noopener">LiverSWAT on air with Bobby Friction</a></h3><p class="row__m"><span class="chip">Radio interview</span> BBC Radio London</p></div></li><li class="row"><span class="row__y">Feb 2025</span><div><h3 class="row__t"><a href="https://blogs.city.ac.uk/city-alumni/2025/02/25/taran-rai-honouring-his-father-by-raising-awareness/" target="_blank" rel="noopener">Taran Rai: Honouring his father by raising awareness</a></h3><p class="row__m"><span class="chip">Feature</span> City St George&#x27;s Alumni Network</p></div></li><li class="row"><span class="row__y">Dec 2023</span><div><h3 class="row__t"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3761" target="_blank" rel="noopener">The Terminator and veterinary medicine: can they meet outside the world of sci-fi?</a></h3><p class="row__m"><span class="chip">Authored article</span> Vet Record</p></div></li><li class="row"><span class="row__y">May 2023</span><div><h3 class="row__t"><a href="https://www.bva.co.uk/news-and-blog/news-article/role-of-artificial-intelligence-in-vet-medicine-to-be-explored-at-bva-live/" target="_blank" rel="noopener">Beyond ChatGPT: harnessing the potential of AI in veterinary medicine</a></h3><p class="row__m"><span class="chip">Expert panel</span> BVA Live, Birmingham</p></div></li><li class="row"><span class="row__y">May 2023</span><div><h3 class="row__t"><a href="https://www.vettimes.com/news/vets/opinion/engage-sceptically-with-ai-debate-bva-live-delegates-told" target="_blank" rel="noopener">Engage &#x27;sceptically&#x27; with AI debate, BVA Live delegates told</a></h3><p class="row__m"><span class="chip">Media coverage</span> Vet Times</p></div></li></ul>
+      <ul class="rows" id="media-more" hidden><li class="row"><span class="row__y">24 Aug 2026</span><div><h3 class="row__t"><a href="https://www.bbc.co.uk/news/articles/cdewej4zyrno" target="_blank" rel="noopener">Hundreds turn out for community sport event</a></h3><p class="row__m"><span class="chip">News coverage</span> BBC News · Neranjana Elapatha</p></div></li><li class="row"><span class="row__y">08 Jul 2026</span><div><h3 class="row__t"><a href="https://lnkd.in/p/guJNxnDa" target="_blank" rel="noopener">Take care of your liver</a></h3><p class="row__m"><span class="chip">Community talk</span> Sri Guru Nanak Darbar Gurdwara · via Bhupinder Sandhu on LinkedIn</p></div></li><li class="row"><span class="row__y">22 Jun 2026</span><div><h3 class="row__t"><a href="https://www.instagram.com/liverswat/reel/DaBUDD2h2Rv/" target="_blank" rel="noopener">BBC Radio Berkshire with Rena Dipti Annobil</a></h3><p class="row__m"><span class="chip">Radio interview</span> BBC Radio Berkshire · With Randeep S Lall</p></div></li><li class="row"><span class="row__y">29 Sep 2025</span><div><h3 class="row__t"><a href="https://www.facebook.com/nishkamSWAT/posts/a-landmark-initiative-for-liver-health-join-us-on-bbc-radio-london-%EF%B8%8F-live-this-e/1128134122754064/" target="_blank" rel="noopener">BBC Radio London with Bobby Friction</a></h3><p class="row__m"><span class="chip">Radio interview</span> BBC Radio London · With Randeep S Lall</p></div></li><li class="row"><span class="row__y">18 Mar 2025</span><div><h3 class="row__t"><a href="https://www.nishkamswat.com/articles/raising-awareness-for-early-liver-disease-detection" target="_blank" rel="noopener">Raising Awareness for Early Liver Disease Detection</a></h3><p class="row__m"><span class="chip">Authored article</span> NishkamSWAT · Taran Rai</p></div></li><li class="row"><span class="row__y">25 Feb 2025</span><div><h3 class="row__t"><a href="https://blogs.city.ac.uk/city-alumni/2025/02/25/taran-rai-honouring-his-father-by-raising-awareness/" target="_blank" rel="noopener">Taran Rai: Honouring his father by raising awareness</a></h3><p class="row__m"><span class="chip">Feature</span> City St George&#x27;s Alumni Network · Madicken Malm</p></div></li><li class="row"><span class="row__y">01 Dec 2023</span><div><h3 class="row__t"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3761" target="_blank" rel="noopener">The Terminator and veterinary medicine: can they meet outside the world of sci-fi?</a></h3><p class="row__m"><span class="chip">Authored article</span> Vet Record · Taran Rai</p></div></li><li class="row"><span class="row__y">21 Jul 2023</span><div><h3 class="row__t"><a href="https://bvajournals.onlinelibrary.wiley.com/doi/abs/10.1002/vetr.3276" target="_blank" rel="noopener">Are AI-written articles the future?</a></h3><p class="row__m"><span class="chip">Media coverage</span> Vet Record · Georgina Mills</p></div></li><li class="row"><span class="row__y">16 May 2023</span><div><h3 class="row__t"><a href="https://www.vettimes.com/news/vets/opinion/engage-sceptically-with-ai-debate-bva-live-delegates-told" target="_blank" rel="noopener">Engage &#x27;sceptically&#x27; with AI debate, BVA Live delegates told</a></h3><p class="row__m"><span class="chip">Media coverage</span> Vet Times · Allister Webb</p></div></li><li class="row"><span class="row__y">11 May 2023</span><div><h3 class="row__t"><a href="https://x.com/BritishVets/status/1656679495925891072" target="_blank" rel="noopener">&#x27;Beyond ChatGPT&#x27; session on harnessing AI in veterinary medicine at #BVALive</a></h3><p class="row__m"><span class="chip">Expert panel</span> @BritishVets on X</p></div></li><li class="row"><span class="row__y">05 May 2023</span><div><h3 class="row__t"><a href="https://www.bva.co.uk/news-and-blog/news-article/role-of-artificial-intelligence-in-vet-medicine-to-be-explored-at-bva-live/" target="_blank" rel="noopener">Role of Artificial Intelligence in vet medicine to be explored at BVA Live</a></h3><p class="row__m"><span class="chip">Expert panel</span> British Veterinary Association</p></div></li><li class="row"><span class="row__y">2023–24</span><div><h3 class="row__t"><a href="https://catalogue.surrey.ac.uk/2023-4/module/EEEM005" target="_blank" rel="noopener">Introduction to neural networks, AI and AI Programming (EEEM005)</a></h3><p class="row__m"><span class="chip">Guest lecture</span> University of Surrey</p></div></li><li class="row"><span class="row__y">07 Dec 2022</span><div><h3 class="row__t"><a href="https://www.surrey.ac.uk/events/20221207-artificial-intelligence-necrosis-and-mitosis-detection" target="_blank" rel="noopener">Artificial Intelligence for Necrosis and Mitosis Detection</a></h3><p class="row__m"><span class="chip">Presentation</span> University of Surrey</p></div></li><li class="row"><span class="row__y">09 Sep 2019</span><div><h3 class="row__t"><a href="https://www.zoetis.co.uk/news-and-media/advancing-the-veterinary-profession---supporting-students.aspx" target="_blank" rel="noopener">Advancing the Veterinary Profession: Supporting Students</a></h3><p class="row__m"><span class="chip">Media coverage</span> Zoetis UK press office</p></div></li><li class="row"><span class="row__y">22 May 2019</span><div><h3 class="row__t"><a href="https://onehealthejp.eu/outcomes/workshops/satellite-workshop-2019" target="_blank" rel="noopener">ASM Satellite Workshop 2019: Digital Innovation and Data Management</a></h3><p class="row__m"><span class="chip">Workshop speaker</span> One Health European Joint Programme</p></div></li></ul>
+      <div class="more-bar">
+        <button class="more" type="button" aria-expanded="false" aria-controls="media-more" data-more="Full archive|Hide archive">Full archive</button>
+      </div>
+    </section>
+
+    <section class="section" id="writing">
+      <div class="section__label"><span class="n">05</span> Writing</div>
+      <h2 class="section__heading">Model Takes</h2>
+      <div class="prose"><p>Where I write independently about AI, technology and research. Sometimes other things I find interesting.</p></div>
+      <ul class="rows" id="posts"><li class="row row--post"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://www.modeltakes.com/p/model-takes-updates-november-2026" target="_blank" rel="noopener">Model Takes Updates [November 2026]</a></h3></div></li><li class="row row--post"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://www.modeltakes.com/p/some-lighter-non-hype-reflections" target="_blank" rel="noopener">Some lighter &quot;non-hype&quot; reflections</a></h3></div></li><li class="row row--post"><span class="row__y">2026</span><div><h3 class="row__t"><a href="https://www.modeltakes.com/p/why-learn-about-neural-networks-today" target="_blank" rel="noopener">Why Learn About Neural Networks Today?</a></h3></div></li><li class="row row--post"><span class="row__y">2024</span><div><h3 class="row__t"><a href="https://www.modeltakes.com/p/advanced-voice-mode-is-coming" target="_blank" rel="noopener">Advanced Voice Mode??</a></h3></div></li></ul>
+      <div class="more-bar"><a class="ext" href="https://www.modeltakes.com/" target="_blank" rel="noopener">Read all posts on Substack ↗</a></div>
+      <form class="subscribe" action="https://www.modeltakes.com/api/v1/free?nojs=true" method="post" target="_blank">
+        <label class="subscribe__label" for="sub-email">Get new posts by email</label>
+        <div class="subscribe__row">
+          <input id="sub-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </div>
+        <p class="fine">Free. Sent through Substack, and you can unsubscribe at any time.</p>
+      </form>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section__label"><span class="n">06</span> Contact</div>
+      <h2 class="section__heading">Get in touch</h2>
+      <div class="prose"><p>Always happy to talk about interesting work, collaborations and ideas.</p></div>
       <a href="mailto:taranraiml@gmail.com" class="contact-email">taranraiml@gmail.com</a>
-      <div class="contact-socials">
-        <a href="https://scholar.google.ca/citations?hl=en&user=-sK0WvQAAAAJ" target="_blank">Scholar</a>
-        <a href="https://github.com/taranrai" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/taranrai/" target="_blank">LinkedIn</a>
-        <a href="https://www.twitter.com/taranraix/" target="_blank">X</a>
-      </div>
-    </div>
-  </section>
+      <p class="where">Based in London, UK, and often in Vancouver, Canada. Eligible to work in the UK and Canada.</p>
+      <ul class="socials"><li><a href="https://www.linkedin.com/in/taranrai/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/taranrai" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://scholar.google.ca/citations?hl=en&amp;user=-sK0WvQAAAAJ" target="_blank" rel="noopener">Scholar</a></li><li><a href="https://www.modeltakes.com/" target="_blank" rel="noopener">Substack</a></li><li><a href="mailto:taranraiml@gmail.com">Email</a></li></ul>
+    </section>
 
-  <hr class="warm-bar">
-  <footer>&copy; 2026 Taran Rai. All rights reserved.</footer>
+    <hr class="warm-bar">
+    <footer>
+      <span>&copy; <span id="year">2026</span> Taran Rai</span>
+      <span>London, UK · Vancouver, Canada · <a href="https://www.twitter.com/taranraix/" target="_blank" rel="noopener">X</a></span>
+    </footer>
+  </main>
 </div>
 
 <script>
-  // THEME: auto-detect, toggle, persist
-  const html = document.documentElement;
-  const themeBtn = document.getElementById('themeToggle');
-  const themeIcon = document.getElementById('themeIcon');
-  const themeLabel = document.getElementById('themeLabel');
+  (function () {
+    var root = document.documentElement;
 
-  function setTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    if (theme === 'dark') {
-      themeIcon.textContent = '☀';
-      themeLabel.textContent = 'Light';
+    // Theme
+    function setTheme(t) {
+      root.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch (e) {}
+    }
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (b) {
+      b.addEventListener('click', function () { setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
+    });
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        var saved = null; try { saved = localStorage.getItem('theme'); } catch (x) {}
+        if (!saved) root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      });
+    }
+
+    // London and Vancouver clocks
+    var fmts = {};
+    function fmt(tz) {
+      return fmts[tz] || (fmts[tz] = new Intl.DateTimeFormat('en-GB', { timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false, timeZoneName: 'short' }));
+    }
+    function tick() {
+      var now = new Date();
+      document.querySelectorAll('[data-clock]').forEach(function (el) {
+        var p = fmt(el.getAttribute('data-clock')).formatToParts(now), get = function (t) { var x = p.find(function (q) { return q.type === t; }); return x ? x.value : ''; };
+        var tz = get('timeZoneName'); if (/^GMT[+-]/.test(tz)) tz = '';  // show a zone name only when the browser knows one
+        el.textContent = get('hour') + ':' + get('minute') + (el.hasAttribute('data-short') || !tz ? '' : ' ' + tz);
+      });
+    }
+    tick(); setInterval(tick, 15000);
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Collapsing menu (mobile and tablet)
+    var burger = document.getElementById('burger'), menu = document.getElementById('menu');
+    function setMenu(open, viaKeyboard) {
+      root.classList.toggle('menu-open', open);
+      burger.setAttribute('aria-expanded', open);
+      burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open && viaKeyboard) { var first = menu.querySelector('a'); if (first) first.focus({ preventScroll: true }); }
+    }
+    burger.addEventListener('click', function (e) { setMenu(burger.getAttribute('aria-expanded') !== 'true', e.detail === 0); });
+    menu.querySelectorAll('a[href^="#"]').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && root.classList.contains('menu-open')) { setMenu(false); burger.focus(); } });
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (e) { if (e.matches) setMenu(false); });
+
+    // Top bar background on scroll
+    var bar = document.getElementById('topbar');
+    function onScroll() { bar.classList.toggle('scrolled', window.scrollY > 20); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+
+    // Work & interests cards
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+    var cardGrid = document.querySelector('.cards'), counter = document.getElementById('counter');
+    var narrow = window.matchMedia('(max-width: 720px)');
+    var panelAnchor = cardGrid.parentNode.querySelector('.subhead');
+    function place() {
+      cards.forEach(function (c) {
+        var p = document.getElementById(c.getAttribute('aria-controls'));
+        if (narrow.matches) c.after(p); else cardGrid.parentNode.insertBefore(p, panelAnchor);
+      });
+    }
+    function select(c, focus) {
+      cards.forEach(function (x) {
+        var on = x === c;
+        x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+      });
+      counter.textContent = '0' + (cards.indexOf(c) + 1) + ' / 04';
+      if (focus) c.focus();
+    }
+    cards.forEach(function (c, i) {
+      c.addEventListener('click', function () { select(c); });
+      c.addEventListener('keydown', function (e) {
+        var k = e.key, n = null;
+        if (k === 'ArrowRight' || k === 'ArrowDown') n = cards[(i + 1) % 4];
+        if (k === 'ArrowLeft' || k === 'ArrowUp') n = cards[(i + 3) % 4];
+        if (n) { e.preventDefault(); select(n, true); }
+      });
+    });
+    place(); narrow.addEventListener('change', place);
+
+    // Show more / fewer
+    document.querySelectorAll('[data-more]').forEach(function (b) {
+      var labels = b.getAttribute('data-more').split('|'), list = document.getElementById(b.getAttribute('aria-controls'));
+      b.addEventListener('click', function () {
+        list.hidden = !list.hidden;
+        b.setAttribute('aria-expanded', !list.hidden);
+        b.textContent = list.hidden ? labels[0] : labels[1];
+      });
+    });
+
+    // Section reveal and active section in the index
+    var sections = document.querySelectorAll('.section');
+    var navLinks = document.querySelectorAll('.index a, .menu__nav a');
+    if ('IntersectionObserver' in window) {
+      var reveal = new IntersectionObserver(function (es) {
+        es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('visible'); reveal.unobserve(en.target); } });
+      }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+      sections.forEach(function (s) { reveal.observe(s); });
+      var spy = new IntersectionObserver(function (es) {
+        es.forEach(function (en) {
+          if (en.isIntersecting) navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+        });
+      }, { rootMargin: '-35% 0px -60% 0px' });
+      sections.forEach(function (s) { spy.observe(s); });
     } else {
-      themeIcon.textContent = '☾';
-      themeLabel.textContent = 'Dark';
+      sections.forEach(function (s) { s.classList.add('visible'); });
     }
-  }
 
-  // Check saved preference, then system preference, default dark
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    setTheme(saved);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-    setTheme('light');
-  } else {
-    setTheme('dark');
-  }
-
-  // Listen for system changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) {
-      setTheme(e.matches ? 'dark' : 'light');
-    }
-  });
-
-  themeBtn.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    setTheme(current === 'dark' ? 'light' : 'dark');
-  });
-
-  // NAV
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 40); });
-
-  const toggle = document.getElementById('navToggle');
-  const links = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => { toggle.classList.toggle('open'); links.classList.toggle('open'); });
-  links.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => { toggle.classList.remove('open'); links.classList.remove('open'); }); });
-
-  // Active nav
-  const sections = document.querySelectorAll('.section, .hero');
-  const navAnchors = document.querySelectorAll('.nav__links a[href^="#"]');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
-    navAnchors.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
-  });
-
-  // Section reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.section').forEach(s => observer.observe(s));
-
-  // Substack RSS
-  async function loadBlog() {
-    const grid = document.getElementById('blogGrid');
-    try {
-      const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.modeltakes.com/feed');
-      const data = await res.json();
-      if (data.status !== 'ok' || !data.items || data.items.length === 0) {
-        grid.innerHTML = '<div class="blog-loading">No posts found. Visit <a class="link" href="https://www.modeltakes.com/" target="_blank">modeltakes.com</a> directly.</div>';
-        return;
-      }
-      const posts = data.items.slice(0, 6);
-      grid.innerHTML = posts.map(post => {
-        let img = post.thumbnail || (post.enclosure && post.enclosure.link) || '';
-        if (!img && post.description) {
-          const m = post.description.match(/<img[^>]+src=["']([^"']+)["']/);
-          if (m) img = m[1];
-        }
-        if (!img && post.content) {
-          const m = post.content.match(/<img[^>]+src=["']([^"']+)["']/);
-          if (m) img = m[1];
-        }
-        if (img && (img.includes('1x1') || img.length < 20)) img = '';
-        const date = new Date(post.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-        return `<a href="${post.link}" target="_blank" class="blog-card">
-          ${img ? `<img class="blog-card__img" src="${img}" alt="" loading="lazy" onerror="this.style.display='none'">` : `<div class="blog-card__img"></div>`}
-          <div class="blog-card__body">
-            <div class="blog-card__title">${post.title}</div>
-            <div class="blog-card__date">${date}</div>
-          </div>
-        </a>`;
-      }).join('');
-    } catch (err) {
-      grid.innerHTML = '<div class="blog-loading">Could not load posts. Visit <a class="link" href="https://www.modeltakes.com/" target="_blank">modeltakes.com</a> directly.</div>';
-    }
-  }
-  loadBlog();
+    // Model Takes: latest posts from Substack (static list above stays if the feed fails)
+    var ctrl = window.AbortController ? new AbortController() : null;
+    if (ctrl) setTimeout(function () { ctrl.abort(); }, 6000);
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.modeltakes.com/feed', ctrl ? { signal: ctrl.signal } : {})
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d.status !== 'ok' || !d.items || !d.items.length) return;
+        var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+        document.getElementById('posts').innerHTML = d.items.slice(0, 4).map(function (p) {
+          return '<li class="row row--post"><span class="row__y">' + esc((p.pubDate || '').slice(0, 4)) + '</span><div><h3 class="row__t"><a href="' + esc(p.link) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a></h3></div></li>';
+        }).join('');
+      })
+      .catch(function () {});
+  })();
 </script>
 </body>
 </html>

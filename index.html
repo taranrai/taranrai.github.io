@@ -414,6 +414,13 @@
   .quote figcaption b { color: var(--text-primary); font-weight: 600; }
   .quote figcaption span { color: var(--text-tertiary); }
   #words .fine { margin-top: 1.75rem; }
+  .li { width: 14px; height: 14px; flex-shrink: 0; color: #0a66c2; }
+  [data-theme="dark"] .li { color: #4a9ce8; }
+  .li-tag { display: inline-flex; align-items: center; gap: 6px; text-transform: uppercase; }
+  #words .ext { display: inline-flex; align-items: center; gap: 8px; }
+  #words .sec-h { flex-wrap: wrap; column-gap: 24px; }
+  #words .sec-h > * { white-space: nowrap; }
+  @media (max-width: 720px) { #words .section__label { margin-bottom: 0.4rem; } #words .li-tag { margin-bottom: 1rem; width: 100%; } }
 
   .subscribe { margin-top: 2rem; overflow: visible; }
   .subscribe__label { display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 0.6rem; }
@@ -656,9 +663,9 @@
     </section>
 
     <section class="section" id="words" aria-labelledby="words-h">
-      <h2 class="section__label" id="words-h">From collaborators</h2>
+      <div class="sec-h"><h2 class="section__label" id="words-h">From collaborators</h2><span class="sec-h__count li-tag"><svg class="li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>LinkedIn recommendations</span></div>
       <div class="quotes"><figure class="quote"><blockquote><p>“Taran spearheaded a sophisticated data science initiative for three of the world&#x27;s leading institutions in animal health, Mars Science &amp; Diagnostics, Zoetis, and University of Surrey. Taran played a pivotal role in enhancing our research approach through valuable insights and contributed to a deeper comprehension of how our digital health technology improves real-world outcomes.”</p></blockquote><figcaption><b>Scott Lyle</b><span>Digital Health Innovation &amp; Strategies</span></figcaption></figure><figure class="quote"><blockquote><p>“We have enjoyed fruitful collaborations through vHive and the University of Surrey, mainly in the application of AI and ML on large datasets related to animal health. These included investigation of the role of social media listening in providing insights into perceptions of animal owners, image analysis, predictive analytics in livestock health and integration of diverse data sources.”</p></blockquote><figcaption><b>Alasdair Cook</b><span>Veterinary Epidemiologist &amp; Emeritus Professor, University of Surrey</span></figcaption></figure><figure class="quote"><blockquote><p>“What distinguishes Taran is not only technical fluency, but also editorial judgment and scientific stewardship.”</p></blockquote><blockquote><p>“This kind of leadership matters: it requires the ability to evaluate evidence critically, coordinate across stakeholders, and communicate with precision—skills Taran demonstrates consistently.”</p></blockquote><figcaption><b>Andrea Wright</b><span>Director, Global Clinical Studies and Outcomes Research</span></figcaption></figure><figure class="quote"><blockquote><p>“Taran and I collaborated since 2015 on a project on AI and tumor histopathology, specifically soft tissue sarcomas in dogs. He is dedicated, hard-working, and highly skilled and we wouldn&#x27;t have had such good results without him.”</p></blockquote><figcaption><b>Barbara Bacci</b><span>Associate Professor of Veterinary Pathology, Università di Bologna</span></figcaption></figure></div>
-      <p class="fine"><a class="ext" href="https://www.linkedin.com/in/taranrai/details/recommendations/" target="_blank" rel="noopener">Read full recommendations on LinkedIn ↗</a></p>
+      <p class="fine"><a class="ext" href="https://www.linkedin.com/in/taranrai/details/recommendations/" target="_blank" rel="noopener"><svg class="li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>Read full recommendations on LinkedIn ↗</a></p>
     </section>
     <section class="section" id="research">
       <div class="section__label"><span class="n">03</span> Research</div>

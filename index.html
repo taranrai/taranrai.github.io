@@ -314,6 +314,11 @@
   .strip--media { margin: 0.25rem 0 0.5rem; grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .strip .wm { color: var(--text-primary); font-size: 1.12rem; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; }
   .strip .wm:not(.wm--stealth) { opacity: 0.62; }
+  .strip .wm { border-radius: 1px; transition: opacity 0.25s, color 0.25s, background 0.25s, box-shadow 0.25s; }
+  [data-theme="dark"] .strip a:hover .wm, [data-theme="dark"] .strip a:active .wm, [data-theme="dark"] .strip a:focus-visible .wm,
+  [data-theme="dark"] .strip span.lg:hover .wm, [data-theme="dark"] .strip span.lg:active .wm {
+    opacity: 1; color: #1a1a1a; background: var(--tile-bg); box-shadow: 0 0 0 6px var(--tile-bg);
+  }
   .strip img.mark { max-height: 40px; }
   .strip .wm { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: var(--text-secondary); }
   .strip img { filter: grayscale(1) brightness(0); opacity: 0.6; transition: filter 0.25s, opacity 0.25s; }

@@ -298,6 +298,14 @@
   .now__list { list-style: none; border-top: 1px solid var(--border-strong); margin-top: 0; }
   .now__list li { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--border); font-size: 0.94rem; line-height: 1.5; }
   .now__list b { color: var(--text-primary); font-weight: 600; }
+  /* Liver health advocacy: small logos, muted at rest like the logo strips */
+  .adv b { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .adv__logo { height: 34px; width: auto; display: block; filter: grayscale(1); opacity: 0.7; transition: filter 0.25s, opacity 0.25s; }
+  .adv__logo--ox { height: 54px; }
+  /* Dark mode: greyscale then invert, so the GLI letters and Oxford crest stay legible */
+  [data-theme="dark"] .adv__logo { filter: grayscale(1) invert(1); opacity: 0.7; }
+  .adv li:hover .adv__logo, .adv li:active .adv__logo { filter: none; opacity: 1; }
+  [data-theme="dark"] .adv li:hover .adv__logo, [data-theme="dark"] .adv li:active .adv__logo { filter: grayscale(1) invert(1); opacity: 1; }
   .vr__lead { font-size: 0.94rem; margin-bottom: 0.9rem; max-width: 62ch; }
   .vr__lead b { color: var(--text-primary); font-weight: 600; }
   .now__list a { color: var(--text-primary); text-decoration: none; border-bottom: 1.5px solid var(--border-strong); transition: border-color 0.2s; }
@@ -562,6 +570,7 @@
     .tile__logo img { max-height: 28px; }
     .tile__logo img.wide { max-height: 30px; }
     .now__list li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+    .adv b { flex-direction: row; align-items: center; gap: 10px; margin-bottom: 0.2rem; }
     .strip { display: flex; flex-wrap: wrap; justify-content: center; row-gap: 6px; column-gap: 0; }
     .strip li { flex: 0 0 33.333%; }
     .strip a, .strip span.lg { height: 56px; }
@@ -715,10 +724,10 @@
       <h3 class="subhead">Charity work</h3>
       <ul class="logos logos--3"><li><a class="tile" href="https://alcoholchange.org.uk/about-us/about-our-charity/meet-our-team/trustees" target="_blank" rel="noopener"><span class="tile__logo"><img class="tall" src="assets/images/logos/alcoholchange.svg" alt="Alcohol Change UK" loading="lazy"></span><span class="tile__text"><span class="tile__name">Alcohol Change UK</span><span class="tile__cap">Trustee</span></span><span class="sr-only"> (opens in a new tab)</span></a></li><li><a class="tile" href="https://www.liverswat.org/" target="_blank" rel="noopener"><span class="tile__logo"><img class="liver" src="assets/images/logos/liverswat.png" alt="LiverSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">LiverSWAT</span><span class="tile__cap">Founder · national liver health campaign</span></span><span class="sr-only"> (opens in a new tab)</span></a></li><li><a class="tile" href="https://nishkamswat.org" target="_blank" rel="noopener"><span class="tile__logo"><img class="photo" src="assets/images/logos/nishkamswat.jpg" alt="NishkamSWAT" loading="lazy"></span><span class="tile__text"><span class="tile__name">NishkamSWAT</span><span class="tile__cap">LiverSWAT is a NishkamSWAT initiative</span></span><span class="sr-only"> (opens in a new tab)</span></a></li></ul>
       <h3 class="subhead">Liver health advocacy</h3>
-      <div class="vr">
+      <div class="vr adv">
         <ul class="now__list">
-          <li><b>Global Liver Institute</b><span>Steering Committee Member, Advanced Advocacy Academy UK (A3 UK 2027), supporting liver health advocacy and community engagement. Since Sep 2026.</span></li>
-          <li><b>University of Oxford</b><span>Patient and Public Involvement volunteer for chronic hepatitis B research, drawing on AI/ML healthcare research and personal experience of how liver cancer affects patients and families. Since Mar 2026.</span></li>
+          <li><b><img class="adv__logo" src="assets/images/logos/gli.png" alt="" loading="lazy">Global Liver Institute</b><span>Steering Committee Member, Advanced Advocacy Academy UK (A3 UK 2027), supporting liver health advocacy and community engagement. Since Sep 2026.</span></li>
+          <li><b><img class="adv__logo adv__logo--ox" src="assets/images/logos/oxford.svg" alt="" loading="lazy">University of Oxford</b><span>Patient and Public Involvement volunteer for chronic hepatitis B research, drawing on AI/ML healthcare research and personal experience of how liver cancer affects patients and families. Since Mar 2026.</span></li>
         </ul>
       </div>
     </section>
